@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNESCO Heritage Sites in Uzbekistan, Kazakhstan & Ukraine</title>
+    <title>UNESCO Heritage Sites: Uzbekistan, Kazakhstan & Ukraine</title>
     
     <!-- MapLibre GL JS -->
     <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
@@ -111,10 +111,16 @@
 <body>
     <div id="map"></div>
     
-    <div class="map-overlay">
+    <nav style="position: absolute; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 15px; align-items: center;">
+        <span style="font-weight: 600; font-size: 14px; color: #333;">UNESCO Heritage Atlas:</span>
+        <a href="index.html" style="color: #0066cc; text-decoration: none; font-size: 14px; padding: 5px 10px; background: #e3f2fd; border-radius: 4px;">Overview Map</a>
+        <a href="timeline.html" style="color: #666; text-decoration: none; font-size: 14px; padding: 5px 10px;">Timeline Map</a>
+    </nav>
+    
+    <div class="map-overlay" style="top: 70px;">
         <h1>UNESCO World Heritage Sites</h1>
         <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
-            UNESCO heritage sites in Uzbekistan, Kazakhstan, and Ukraine, 1990 - 2025
+            Post-Soviet heritage sites in Uzbekistan, Kazakhstan, and Ukraine
         </p>
         
         <div class="legend">
