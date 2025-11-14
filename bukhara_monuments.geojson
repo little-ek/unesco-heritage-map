@@ -1,0 +1,277 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4286,
+          39.7747
+        ]
+      },
+      "properties": {
+        "name": "Kalyan Mosque",
+        "type": "Mosque",
+        "category": "Religious",
+        "built": "1514",
+        "description": "Main Friday mosque, adjacent to the iconic Kalyan Minaret"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4195,
+          39.7785
+        ]
+      },
+      "properties": {
+        "name": "Bolo Hauz Mosque",
+        "type": "Mosque",
+        "category": "Religious",
+        "built": "1712",
+        "description": "Mosque with wooden pillared portico, opposite the Ark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4245,
+          39.7795
+        ]
+      },
+      "properties": {
+        "name": "Magoki Attori Mosque",
+        "type": "Mosque",
+        "category": "Religious",
+        "built": "12th-16th century",
+        "description": "One of Bukhara's oldest mosques, built on pre-Islamic temple site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.429,
+          39.775
+        ]
+      },
+      "properties": {
+        "name": "Mir-i-Arab Madrasa",
+        "type": "Madrasa",
+        "category": "Religious",
+        "built": "1535-1536",
+        "description": "Active Islamic school, faces Kalyan Mosque"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4295,
+          39.774
+        ]
+      },
+      "properties": {
+        "name": "Ulugh Beg Madrasa",
+        "type": "Madrasa",
+        "category": "Religious",
+        "built": "1417",
+        "description": "Oldest preserved madrasa in Central Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.43,
+          39.7738
+        ]
+      },
+      "properties": {
+        "name": "Abdulaziz Khan Madrasa",
+        "type": "Madrasa",
+        "category": "Religious",
+        "built": "1652",
+        "description": "Ornate decoration, faces Ulugh Beg Madrasa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4315,
+          39.7765
+        ]
+      },
+      "properties": {
+        "name": "Kukeldash Madrasa",
+        "type": "Madrasa",
+        "category": "Religious",
+        "built": "1568-1569",
+        "description": "Largest madrasa in Central Asia, overlooks Lyab-i Hauz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.432,
+          39.777
+        ]
+      },
+      "properties": {
+        "name": "Nadir Divan-Begi Madrasa",
+        "type": "Madrasa",
+        "category": "Religious",
+        "built": "1622-1623",
+        "description": "Originally built as caravanserai, converted to madrasa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.425,
+          39.772
+        ]
+      },
+      "properties": {
+        "name": "Chor Minor",
+        "type": "Madrasa",
+        "category": "Religious",
+        "built": "1807",
+        "description": "Four-towered madrasa gatehouse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4155,
+          39.7795
+        ]
+      },
+      "properties": {
+        "name": "Ismail Samani Mausoleum",
+        "type": "Mausoleum",
+        "category": "Religious",
+        "built": "9th-10th century",
+        "description": "Masterpiece of early Islamic architecture, UNESCO highlight"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.417,
+          39.7805
+        ]
+      },
+      "properties": {
+        "name": "Chashma Ayub Mausoleum",
+        "type": "Mausoleum",
+        "category": "Religious",
+        "built": "12th-16th century",
+        "description": "Spring of Job mausoleum complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.418,
+          39.778
+        ]
+      },
+      "properties": {
+        "name": "Ark Fortress",
+        "type": "Fortress",
+        "category": "Secular",
+        "built": "5th century CE (current: 16th-20th)",
+        "description": "Ancient citadel and palace of Bukhara's rulers"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.428,
+          39.776
+        ]
+      },
+      "properties": {
+        "name": "Taki-Zargaron (Jewelers' Dome)",
+        "type": "Trading Dome",
+        "category": "Secular",
+        "built": "16th century",
+        "description": "Covered bazaar for jewelers"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.427,
+          39.7755
+        ]
+      },
+      "properties": {
+        "name": "Taki-Telpak Furushon (Hatmakers' Dome)",
+        "type": "Trading Dome",
+        "category": "Secular",
+        "built": "16th century",
+        "description": "Covered bazaar at main crossroads"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4265,
+          39.775
+        ]
+      },
+      "properties": {
+        "name": "Taki-Sarrafon (Moneychangers' Dome)",
+        "type": "Trading Dome",
+        "category": "Secular",
+        "built": "16th century",
+        "description": "Covered bazaar for currency exchange"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4318,
+          39.7768
+        ]
+      },
+      "properties": {
+        "name": "Lyab-i Hauz",
+        "type": "Plaza",
+        "category": "Secular",
+        "built": "1620",
+        "description": "Central plaza around reservoir, social gathering place"
+      }
+    }
+  ]
+}
