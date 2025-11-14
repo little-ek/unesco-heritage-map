@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNESCO Inscriptions Timeline: Delayed Religious Heritage</title>
+    
+    <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .map-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            max-width: 400px;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 22px;
+            margin-bottom: 8px;
+            color: #222;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        
+        .timeline {
+            margin-top: 20px;
+            border-top: 2px solid #eee;
+            padding-top: 15px;
+        }
+        
+        .period {
+            margin-bottom: 15px;
+        }
+        
+        .period-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .period-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .period-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .period-count {
+            font-size: 13px;
+            color: #666;
+            margin-left: 5px;
+        }
+        
+        .period-description {
+            font-size: 12px;
+            color: #888;
+            margin-left: 26px;
+            line-height: 1.4;
+        }
+        
+        .insight {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fffbf0;
+            border-left: 4px solid #f39c12;
+            border-radius: 4px;
+        }
+        
+        .insight-title {
+            font-weight: 600;
+            font-size: 13px;
+            color: #d68910;
+            margin-bottom: 5px;
+        }
+        
+        .insight-text {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .maplibregl-popup-content {
+            padding: 15px;
+            max-width: 320px;
+        }
+        
+        .popup-title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .popup-year {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .popup-field {
+            margin-bottom: 6px;
+            font-size: 13px;
+        }
+        
+        .popup-field strong {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="map-overlay">
+        <h1>UNESCO Inscription Timeline</h1>
+        <p class="subtitle">
+            Visualizing when post-Soviet states nominated heritage sites reveals distinct strategies for presenting religious heritage
+        </p>
+        
+        <div class="timeline">
+            <div class="period">
+                <div class="period-header">
+                    <div class="period-color" style="background-color: #8B4513;"></div>
+                    <span class="period-title">1990-1993: Soviet Legacy</span>
+                    <span class="period-count">(5 sites)</span>
+                </div>
+                <p class="period-description">
+                    First inscriptions by USSR/newly independent states
+                </p>
+            </div>
+            
+            <div class="period">
+                <div class="period-header">
+                    <div class="period-color" style="background-color: #D2691E;"></div>
+                    <span class="period-title">1998-2003: Early Independence</span>
+                    <span class="period-count">(4 sites)</span>
+                </div>
+                <p class="period-description">
+                    Including Yasawi Mausoleum (2003) - Kazakhstan's first standalone religious site
+                </p>
+            </div>
+            
+            <div class="period">
+                <div class="period-header">
+                    <div class="period-color" style="background-color: #DAA520;"></div>
+                    <span class="period-title">2004-2013: Diversification</span>
+                    <span class="period-count">(5 sites)</span>
+                </div>
+                <p class="period-description">
+                    Mix of cultural and natural sites
+                </p>
+            </div>
+            
+            <div class="period">
+                <div class="period-header">
+                    <div class="period-color" style="background-color: #F4A460;"></div>
+                    <span class="period-title">2014-2023: Transboundary Era</span>
+                    <span class="period-count">(5 sites)</span>
+                </div>
+                <p class="period-description">
+                    Collaborative nominations across borders
+                </p>
+            </div>
+        </div>
+        
+        <div class="insight">
+            <div class="insight-title">Key Finding:</div>
+            <div class="insight-text">
+                Uzbekistan rapidly inscribed 4 religious sites as "urban ensembles" (1990-2001). 
+                Kazakhstan waited <strong>13 years</strong> before inscribing its major pilgrimage site 
+                as a standalone monument (2003).
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const map = new maplibregl.Map({
+            container: 'map',
+            style: 'https://demotiles.maplibre.org/style.json',
+            center: [50, 48],
+            zoom: 3.5
+        });
+
+        map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+        // Function to assign color based on year
+        function getColorByYear(year) {
+            if (year >= 1990 && year <= 1993) return '#8B4513'; // Dark brown
+            if (year >= 1998 && year <= 2003) return '#D2691E'; // Saddle brown
+            if (year >= 2004 && year <= 2013) return '#DAA520'; // Goldenrod
+            if (year >= 2014 && year <= 2023) return '#F4A460'; // Sandy brown
+            return '#95a5a6'; // Default gray
+        }
+
+        map.on('load', function() {
+            fetch('unesco_sites.geojson')
+                .then(response => response.json())
+                .then(data => {
+                    map.addSource('unesco-sites', {
+                        type: 'geojson',
+                        data: data
+                    });
+
+                    // Add circles colored by time period
+                    map.addLayer({
+                        'id': 'unesco-circles',
+                        'type': 'circle',
+                        'source': 'unesco-sites',
+                        'paint': {
+                            'circle-radius': [
+                                'case',
+                                ['==', ['get', 'name'], 'Mausoleum of Khoja Ahmed Yasawi'],
+                                12, // Larger for emphasis
+                                8
+                            ],
+                            'circle-color': [
+                                'case',
+                                ['<=', ['get', 'year'], 1993], '#8B4513',
+                                ['<=', ['get', 'year'], 2003], '#D2691E',
+                                ['<=', ['get', 'year'], 2013], '#DAA520',
+                                '#F4A460'
+                            ],
+                            'circle-stroke-width': [
+                                'case',
+                                ['==', ['get', 'name'], 'Mausoleum of Khoja Ahmed Yasawi'],
+                                3,
+                                2
+                            ],
+                            'circle-stroke-color': '#ffffff',
+                            'circle-opacity': 0.85
+                        }
+                    });
+
+                    // Add labels for key sites
+                    map.addLayer({
+                        'id': 'site-labels',
+                        'type': 'symbol',
+                        'source': 'unesco-sites',
+                        'filter': [
+                            'in',
+                            ['get', 'name'],
+                            ['literal', [
+                                'Mausoleum of Khoja Ahmed Yasawi',
+                                'Historic Centre of Bukhara',
+                                'Samarkand — Crossroad of Cultures',
+                                'Itchan Kala'
+                            ]]
+                        ],
+                        'layout': {
+                            'text-field': ['get', 'name'],
+                            'text-font': ['Open Sans Regular'],
+                            'text-size': 11,
+                            'text-offset': [0, 1.5],
+                            'text-anchor': 'top'
+                        },
+                        'paint': {
+                            'text-color': '#222',
+                            'text-halo-color': '#ffffff',
+                            'text-halo-width': 2
+                        }
+                    });
+
+                    const popup = new maplibregl.Popup({
+                        closeButton: true,
+                        closeOnClick: false
+                    });
+
+                    map.on('click', 'unesco-circles', function(e) {
+                        const props = e.features[0].properties;
+                        const coordinates = e.features[0].geometry.coordinates.slice();
+                        
+                        const period = props.year <= 1993 ? '1990-1993: Soviet Legacy' :
+                                      props.year <= 2003 ? '1998-2003: Early Independence' :
+                                      props.year <= 2013 ? '2004-2013: Diversification' :
+                                      '2014-2023: Transboundary Era';
+
+                        const popupContent = `
+                            <div class="popup-title">${props.name}</div>
+                            <div class="popup-year">Inscribed: ${props.year}</div>
+                            <div class="popup-field"><strong>Period:</strong> ${period}</div>
+                            <div class="popup-field"><strong>Country:</strong> ${props.country}</div>
+                            <div class="popup-field"><strong>Type:</strong> ${props.type}</div>
+                            <div class="popup-field"><strong>Religious:</strong> ${props.religious}</div>
+                            <div class="popup-field"><strong>Criteria:</strong> ${props.criteria}</div>
+                        `;
+
+                        popup.setLngLat(coordinates)
+                            .setHTML(popupContent)
+                            .addTo(map);
+                    });
+
+                    map.on('mouseenter', 'unesco-circles', function() {
+                        map.getCanvas().style.cursor = 'pointer';
+                    });
+
+                    map.on('mouseleave', 'unesco-circles', function() {
+                        map.getCanvas().style.cursor = '';
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
