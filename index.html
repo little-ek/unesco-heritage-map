@@ -152,7 +152,21 @@
         // Initialize map
         const map = new maplibregl.Map({
             container: 'map',
-            style: 'https://demotiles.maplibre.org/style.json',
+            style: {
+                "version": 8,
+                "sources": {
+                    "carto": {
+                        "type": "raster",
+                        "tiles": ["https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"],
+                        "tileSize": 256
+                    }
+                },
+                "layers": [{
+                    "id": "background",
+                    "type": "raster",
+                    "source": "carto"
+                }]
+            },
             center: [50, 48],
             zoom: 3.5
         });
