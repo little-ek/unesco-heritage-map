@@ -1,0 +1,651 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.426,
+          39.7765
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Bukhara",
+        "country": "Uzbekistan",
+        "year": 1993,
+        "type": "Ensemble",
+        "region": "Central Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.975,
+          39.6542
+        ]
+      },
+      "properties": {
+        "name": "Samarkand - Crossroad of Cultures",
+        "country": "Uzbekistan",
+        "year": 2001,
+        "type": "Ensemble",
+        "region": "Central Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.3636,
+          41.3775
+        ]
+      },
+      "properties": {
+        "name": "Itchan Kala",
+        "country": "Uzbekistan",
+        "year": 1990,
+        "type": "Ensemble",
+        "region": "Central Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.4847,
+          39.6556
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Shakhrisyabz",
+        "country": "Uzbekistan",
+        "year": 2000,
+        "type": "Ensemble",
+        "region": "Central Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.2667,
+          42.8667
+        ]
+      },
+      "properties": {
+        "name": "Mausoleum of Khoja Ahmed Yasawi",
+        "country": "Kazakhstan",
+        "year": 2003,
+        "type": "Monument",
+        "region": "Central Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3522,
+          48.8566
+        ]
+      },
+      "properties": {
+        "name": "Paris, Banks of the Seine",
+        "country": "France",
+        "year": 1991,
+        "type": "Ensemble",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Rome",
+        "country": "Italy",
+        "year": 1980,
+        "type": "Ensemble",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4378,
+          50.0875
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Prague",
+        "country": "Czech Republic",
+        "year": 1992,
+        "type": "Ensemble",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.945,
+          50.0647
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Kraków",
+        "country": "Poland",
+        "year": 1978,
+        "type": "Ensemble",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7038,
+          40.4168
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Toledo",
+        "country": "Spain",
+        "year": 1986,
+        "type": "Ensemble",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2558,
+          43.7696
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Florence",
+        "country": "Italy",
+        "year": 1982,
+        "type": "Ensemble",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3155,
+          45.4408
+        ]
+      },
+      "properties": {
+        "name": "Venice and its Lagoon",
+        "country": "Italy",
+        "year": 1987,
+        "type": "Ensemble",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7275,
+          37.9838
+        ]
+      },
+      "properties": {
+        "name": "Acropolis, Athens",
+        "country": "Greece",
+        "year": 1987,
+        "type": "Monument",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.8219,
+          30.3285
+        ]
+      },
+      "properties": {
+        "name": "Petra",
+        "country": "Jordan",
+        "year": 1985,
+        "type": "Ensemble",
+        "region": "Middle East"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8917,
+          31.9522
+        ]
+      },
+      "properties": {
+        "name": "Old City of Jerusalem",
+        "country": "Jerusalem",
+        "year": 1981,
+        "type": "Ensemble",
+        "region": "Middle East"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2765,
+          33.5138
+        ]
+      },
+      "properties": {
+        "name": "Old City of Damascus",
+        "country": "Syria",
+        "year": 1979,
+        "type": "Ensemble",
+        "region": "Middle East"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.3661,
+          33.3152
+        ]
+      },
+      "properties": {
+        "name": "Ashur (Qal'at Sherqat)",
+        "country": "Iraq",
+        "year": 2003,
+        "type": "Monument",
+        "region": "Middle East"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.6777,
+          32.6546
+        ]
+      },
+      "properties": {
+        "name": "Meidan Emam, Isfahan",
+        "country": "Iran",
+        "year": 1979,
+        "type": "Ensemble",
+        "region": "Middle East"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0421,
+          27.1751
+        ]
+      },
+      "properties": {
+        "name": "Taj Mahal",
+        "country": "India",
+        "year": 1983,
+        "type": "Monument",
+        "region": "South Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.324,
+          27.7172
+        ]
+      },
+      "properties": {
+        "name": "Kathmandu Valley",
+        "country": "Nepal",
+        "year": 1979,
+        "type": "Ensemble",
+        "region": "South Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.0882,
+          21.1458
+        ]
+      },
+      "properties": {
+        "name": "Khajuraho Group of Monuments",
+        "country": "India",
+        "year": 1986,
+        "type": "Ensemble",
+        "region": "South Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3972,
+          39.9042
+        ]
+      },
+      "properties": {
+        "name": "Imperial Palaces (Forbidden City)",
+        "country": "China",
+        "year": 1987,
+        "type": "Ensemble",
+        "region": "East Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7681,
+          35.0116
+        ]
+      },
+      "properties": {
+        "name": "Historic Monuments of Ancient Kyoto",
+        "country": "Japan",
+        "year": 1994,
+        "type": "Ensemble",
+        "region": "East Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.978,
+          37.5665
+        ]
+      },
+      "properties": {
+        "name": "Changdeokgung Palace Complex",
+        "country": "South Korea",
+        "year": 1997,
+        "type": "Ensemble",
+        "region": "East Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.1167,
+          22.0
+        ]
+      },
+      "properties": {
+        "name": "Old Town of Lijiang",
+        "country": "China",
+        "year": 1997,
+        "type": "Ensemble",
+        "region": "East Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8668,
+          13.4125
+        ]
+      },
+      "properties": {
+        "name": "Angkor",
+        "country": "Cambodia",
+        "year": 1992,
+        "type": "Ensemble",
+        "region": "Southeast Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.5292,
+          3.5952
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Malacca",
+        "country": "Malaysia",
+        "year": 2008,
+        "type": "Ensemble",
+        "region": "Southeast Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5018,
+          13.7563
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Ayutthaya",
+        "country": "Thailand",
+        "year": 1991,
+        "type": "Ensemble",
+        "region": "Southeast Asia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1342,
+          29.9792
+        ]
+      },
+      "properties": {
+        "name": "Memphis and its Necropolis",
+        "country": "Egypt",
+        "year": 1979,
+        "type": "Ensemble",
+        "region": "Africa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9811,
+          31.6295
+        ]
+      },
+      "properties": {
+        "name": "Medina of Marrakesh",
+        "country": "Morocco",
+        "year": 1985,
+        "type": "Ensemble",
+        "region": "Africa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.6229,
+          30.0444
+        ]
+      },
+      "properties": {
+        "name": "Ksar of Ait-Ben-Haddou",
+        "country": "Morocco",
+        "year": 1987,
+        "type": "Ensemble",
+        "region": "Africa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.545,
+          -13.1631
+        ]
+      },
+      "properties": {
+        "name": "Historic Sanctuary of Machu Picchu",
+        "country": "Peru",
+        "year": 1983,
+        "type": "Ensemble",
+        "region": "Americas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1332,
+          19.4326
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Mexico City",
+        "country": "Mexico",
+        "year": 1987,
+        "type": "Ensemble",
+        "region": "Americas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1729,
+          -22.9068
+        ]
+      },
+      "properties": {
+        "name": "Rio de Janeiro: Landscapes",
+        "country": "Brazil",
+        "year": 2012,
+        "type": "Ensemble",
+        "region": "Americas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.531,
+          41.4901
+        ]
+      },
+      "properties": {
+        "name": "Newport Historic District",
+        "country": "USA",
+        "year": 1968,
+        "type": "Ensemble",
+        "region": "Americas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8262,
+          51.1789
+        ]
+      },
+      "properties": {
+        "name": "Stonehenge",
+        "country": "UK",
+        "year": 1986,
+        "type": "Monument",
+        "region": "Europe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1342,
+          29.9792
+        ]
+      },
+      "properties": {
+        "name": "Pyramids of Giza",
+        "country": "Egypt",
+        "year": 1979,
+        "type": "Monument",
+        "region": "Africa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9129,
+          41.8239
+        ]
+      },
+      "properties": {
+        "name": "Statue of Liberty",
+        "country": "USA",
+        "year": 1984,
+        "type": "Monument",
+        "region": "Americas"
+      }
+    }
+  ]
+}
