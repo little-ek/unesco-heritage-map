@@ -92,9 +92,6 @@
             flex-shrink: 0;
         }
         
-        .legend-symbol.ensemble { background-color: #e74c3c; }
-        .legend-symbol.monument { background-color: #95a5a6; }
-        
         .legend-count {
             color: #999;
             font-size: 12px;
@@ -128,6 +125,21 @@
             color: #c0392b;
         }
         
+        .popup-type.transnational {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .popup-type.natural {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .popup-type.mixed {
+            background: #fff3e0;
+            color: #e65100;
+        }
+        
         .popup-type.monument {
             background: #ecf0f1;
             color: #7f8c8d;
@@ -151,46 +163,75 @@
     <div id="map"></div>
     
     <div class="map-overlay">
-        <h1>UNESCO World Heritage Nomination Strategies</h1>
+        <h1>Global UNESCO World Heritage Sites</h1>
         
         <div class="narrative-text">
             <p>
-                Since 1978, nations have inscribed over 1,100 sites on the UNESCO World Heritage List. 
-                But they use <strong>two fundamentally different strategies</strong> for presenting cultural heritage:
+                The <strong>1,247 UNESCO World Heritage Sites</strong> span every continent and represent 
+                humanity's shared cultural and natural heritage. But how nations <strong>frame</strong> 
+                these sites reveals strategic choices about identity and presentation.
             </p>
             
             <p>
-                <strong>Ensemble nominations</strong> (red) inscribe entire historic cities or cultural landscapes, 
-                embedding religious and secular monuments within a broader urban or territorial narrative.
-            </p>
-            
-            <p>
-                <strong>Individual monuments</strong> (gray) isolate single buildings or archaeological sites, 
-                emphasizing their architectural or symbolic uniqueness.
-            </p>
-            
-            <p>
-                This atlas examines how <strong>post-Soviet Central Asian states</strong> — particularly 
-                Uzbekistan and Kazakhstan — employed these strategies differently when presenting 
-                <strong>Islamic heritage</strong> to UNESCO in the 1990s-2000s.
+                This map shows <strong>five distinct nomination approaches</strong>, with 
+                <strong style="color: #e74c3c;">ensemble nominations</strong> (437 sites, 43% of cultural sites) 
+                being the most common strategy for presenting cultural heritage.
             </p>
             
             <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-style: italic; color: #666;">
-                Notice the concentration of <strong style="color: #e74c3c;">ensemble nominations</strong> 
-                in Europe, the Middle East, and East Asia — regions with established traditions of 
-                presenting religious architecture within urban frameworks.
+                Notice how <strong style="color: #e74c3c;">ensemble nominations</strong> cluster in 
+                Latin America (51%), the Arab world (47%), and Europe (44%) — regions with traditions 
+                of presenting heritage within <strong>urban or landscape contexts</strong> rather than 
+                as isolated monuments.
             </p>
         </div>
         
         <div class="legend">
-            <div class="legend-title">Nomination Types:</div>
+            <div class="legend-title">Nomination Strategies (Priority Hierarchy):</div>
             <div class="legend-item">
-                <div class="legend-symbol ensemble"></div>
-                <span>Urban Ensemble / Cultural Landscape<span class="legend-count">(31 sites)</span></span>
+                <div class="legend-symbol" style="background-color: #e74c3c;"></div>
+                <span><strong>Ensemble</strong><span class="legend-count">(437 sites)</span></span>
             </div>
+            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+                Historic cities, cultural landscapes, urban districts
+            </div>
+            
             <div class="legend-item">
-                <div class="legend-symbol monument"></div>
-                <span>Individual Monument<span class="legend-count">(7 sites)</span></span>
+                <div class="legend-symbol" style="background-color: #3498db;"></div>
+                <span><strong>Transnational</strong><span class="legend-count">(39 sites)</span></span>
+            </div>
+            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+                Shared by multiple countries (non-ensemble)
+            </div>
+            
+            <div class="legend-item">
+                <div class="legend-symbol" style="background-color: #27ae60;"></div>
+                <span><strong>Natural</strong><span class="legend-count">(215 sites)</span></span>
+            </div>
+            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+                Outstanding natural features, ecosystems, biodiversity
+            </div>
+            
+            <div class="legend-item">
+                <div class="legend-symbol" style="background-color: #f39c12;"></div>
+                <span><strong>Mixed</strong><span class="legend-count">(31 sites)</span></span>
+            </div>
+            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+                Both cultural and natural significance
+            </div>
+            
+            <div class="legend-item">
+                <div class="legend-symbol" style="background-color: #95a5a6;"></div>
+                <span><strong>Monument</strong><span class="legend-count">(525 sites)</span></span>
+            </div>
+            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+                Individual cultural monuments, archaeological sites
+            </div>
+            
+            <div style="margin-top: 15px; padding: 12px; background: #f8f9fa; border-radius: 4px; font-size: 11px; color: #555; line-height: 1.5;">
+                <strong>Note:</strong> When sites have multiple characteristics (e.g., both ensemble and transnational), 
+                they're colored by the highest priority category. Ensembles take precedence as they're most relevant 
+                to this atlas's argument.
             </div>
         </div>
     </div>
@@ -224,7 +265,7 @@
         map.addControl(new maplibregl.NavigationControl(), 'top-left');
 
         map.on('load', function() {
-            fetch('global_unesco_sites.geojson')
+            fetch('all_unesco_sites.geojson')
                 .then(response => response.json())
                 .then(data => {
                     map.addSource('global-sites', {
@@ -241,18 +282,13 @@
                                 'interpolate',
                                 ['linear'],
                                 ['zoom'],
-                                2, 5,
-                                8, 12
+                                2, 4,
+                                8, 10
                             ],
-                            'circle-color': [
-                                'match',
-                                ['get', 'type'],
-                                'Ensemble', '#e74c3c',
-                                '#95a5a6'
-                            ],
-                            'circle-stroke-width': 2,
+                            'circle-color': ['get', 'display_color'],
+                            'circle-stroke-width': 1.5,
                             'circle-stroke-color': '#ffffff',
-                            'circle-opacity': 0.85
+                            'circle-opacity': 0.8
                         }
                     });
 
@@ -265,14 +301,23 @@
                         const props = e.features[0].properties;
                         const coordinates = e.features[0].geometry.coordinates.slice();
 
-                        const typeClass = props.type.toLowerCase();
+                        // Parse the display_type for styling
+                        const typeClass = props.display_type.toLowerCase();
+                        
+                        // Additional info based on characteristics
+                        let additionalInfo = '';
+                        if (props.is_ensemble === 'true' && props.is_transnational === 'true') {
+                            additionalInfo = '<div style="font-size: 11px; color: #666; margin-top: 5px; padding-top: 5px; border-top: 1px solid #eee;">⭐ Both Ensemble & Transnational</div>';
+                        }
 
                         const popupContent = `
                             <div class="popup-title">${props.name}</div>
-                            <div class="popup-type ${typeClass}">${props.type}</div>
+                            <div class="popup-type ${typeClass}">${props.display_type}</div>
                             <div class="popup-field"><strong>Country:</strong> ${props.country}</div>
-                            <div class="popup-field"><strong>Inscribed:</strong> ${props.year}</div>
+                            <div class="popup-field"><strong>Category:</strong> ${props.category}</div>
+                            <div class="popup-field"><strong>Inscribed:</strong> ${props.year || 'N/A'}</div>
                             <div class="popup-field"><strong>Region:</strong> ${props.region}</div>
+                            ${additionalInfo}
                         `;
 
                         popup.setLngLat(coordinates)
