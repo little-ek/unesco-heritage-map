@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Are Ensemble Sites?</title>
+    
+    <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .map-overlay {
+            position: absolute;
+            top: 70px;
+            left: 20px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            max-width: 500px;
+            z-index: 1;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .map-overlay.collapsed {
+            transform: translateX(-540px);
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .toggle-sidebar-btn {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            background: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 2;
+            transition: all 0.2s;
+        }
+        
+        .toggle-sidebar-btn:hover {
+            background: #f0f0f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        
+        .toggle-sidebar-btn.sidebar-open {
+            left: 540px;
+        }
+        
+        h1 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #222;
+            line-height: 1.3;
+        }
+        
+        .intro-text {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .intro-text p {
+            margin-bottom: 15px;
+        }
+        
+        .intro-text strong {
+            color: #000000;
+        }
+        
+        .highlight-box {
+            background: #fff5f5;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #c0392b;
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box-text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #e74c3c;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.3;
+        }
+        
+        .nav-arrow {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+            transition: all 0.2s;
+            z-index: 1;
+        }
+        
+        .nav-arrow:hover {
+            background: #c0392b;
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .nav-arrow::after {
+            content: " →";
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav style="position: absolute; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 15px; align-items: center;">
+        <span style="font-weight: 600; font-size: 14px; color: #333;">UNESCO Heritage Atlas:</span>
+        <a href="intro.html" style="color: #0066cc; text-decoration: none; font-size: 14px; padding: 5px 10px; background: #e3f2fd; border-radius: 4px;">Introduction</a>
+        <a href="global.html" style="color: #666; text-decoration: none; font-size: 14px; padding: 5px 10px;">Global View</a>
+        <a href="index.html" style="color: #666; text-decoration: none; font-size: 14px; padding: 5px 10px;">Regional Overview</a>
+        <a href="timeline.html" style="color: #666; text-decoration: none; font-size: 14px; padding: 5px 10px;">Timeline</a>
+        <a href="bukhara.html" style="color: #666; text-decoration: none; font-size: 14px; padding: 5px 10px;">Bukhara Detail</a>
+        <a href="conclusion.html" style="color: #666; text-decoration: none; font-size: 14px; padding: 5px 10px;">Conclusion</a>
+        <a href="contact.html" style="color: #666; text-decoration: none; font-size: 14px; padding: 5px 10px;">Contact</a>
+    </nav>
+    
+    <div id="map"></div>
+    
+    <button class="toggle-sidebar-btn sidebar-open" id="toggleSidebar" title="Hide/Show Info Panel">◀</button>
+    
+    <div class="map-overlay" id="mapOverlay">
+        <h1>What Are Ensemble Sites?</h1>
+        
+        <div class="intro-text">
+            <p>
+                <strong style="color: #e74c3c;">"Ensemble sites"</strong> are UNESCO World Heritage properties where multiple buildings, structures, or landscapes are nominated together as a unified whole. Rather than individual monuments standing alone, ensemble sites gain their significance from their collective relationship—through architectural coherence, urban homogeneity, or landscape integration.
+            </p>
+            
+            <p>
+                Think of the difference between nominating a single cathedral versus nominating an entire historic city center. The ensemble approach captures how buildings work together to create urban fabric, cultural landscapes, or architectural complexes.
+            </p>
+        </div>
+        
+        <div class="stat-grid">
+            <div class="stat-box">
+                <div class="stat-number">437</div>
+                <div class="stat-label">Ensemble Sites Globally</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">43%</div>
+                <div class="stat-label">of All Cultural Sites</div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <div class="highlight-box-title">The Critical Gap:</div>
+            <div class="highlight-box-text">
+                Despite representing <strong>43% of all cultural World Heritage Sites</strong> (437 of 1,016 sites), ensemble nominations <strong>lack an explicit definition</strong> in UNESCO's Convention operational framework.
+            </div>
+        </div>
+        
+        <div class="intro-text">
+            <p>
+                This definitional gap has consequences. Without clear guidelines for what constitutes an ensemble, states deploy ensemble strategies differently based on their domestic property regimes, documentation systems, and administrative structures—not on heritage value alone.
+            </p>
+            
+            <p>
+                <strong>This atlas explores how inherited institutional frameworks shape ensemble deployment,</strong> with particular focus on post-Soviet states that inscribe ensembles at 62.5%—nearly triple Western Europe's 23-29% rate.
+            </p>
+        </div>
+    </div>
+    
+    <button class="nav-arrow" onclick="window.location.href='global.html'">Next: Global View</button>
+
+    <script>
+        // Light background map
+        const style = {
+            "version": 8,
+            "sources": {
+                "carto": {
+                    "type": "raster",
+                    "tiles": ["https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"],
+                    "tileSize": 256
+                }
+            },
+            "layers": [{
+                "id": "background",
+                "type": "raster",
+                "source": "carto"
+            }]
+        };
+
+        const map = new maplibregl.Map({
+            container: 'map',
+            style: style,
+            center: [20, 30],
+            zoom: 2
+        });
+
+        map.addControl(new maplibregl.NavigationControl(), 'top-left');
+
+        // Toggle sidebar functionality
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const overlay = document.getElementById('mapOverlay');
+        let sidebarOpen = true;
+
+        toggleBtn.addEventListener('click', function() {
+            sidebarOpen = !sidebarOpen;
+            
+            if (sidebarOpen) {
+                overlay.classList.remove('collapsed');
+                toggleBtn.classList.add('sidebar-open');
+                toggleBtn.innerHTML = '◀';
+                toggleBtn.title = 'Hide Info Panel';
+            } else {
+                overlay.classList.add('collapsed');
+                toggleBtn.classList.remove('sidebar-open');
+                toggleBtn.innerHTML = '▶';
+                toggleBtn.title = 'Show Info Panel';
+            }
+        });
+    </script>
+</body>
+</html>

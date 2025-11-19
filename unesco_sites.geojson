@@ -1570,52 +1570,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.1833333333,
-          48.9
-        ]
-      },
-      "properties": {
-        "name": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
-        "country": "Albania,Austria,Belgium,Bosnia and Herzegovina,Bulgaria,Croatia,Czechia,France,Germany,Italy,North Macedonia,Poland,Romania,Slovakia,Slovenia,Spain,Switzerland,Ukraine",
-        "year": 2007,
-        "type": "Transnational",
-        "category": "N",
-        "criteria": "(9)",
-        "description": "<p>This transnational property includes 93 component parts in 18 countries. Since the end of the last Ice Age, European Beech spread from a few isolated refuge areas in the Alps, Carpathians, Dinarides, Mediterranean and Pyrenees over a short period of a few thousand years in a process that is still ongoing. The successful expansion across a whole continent is related to the tree’s adaptability and tolerance of different climatic, geographical and physical conditions.</p>",
-        "transboundary": true,
-        "ensemble": false,
-        "region": "Europe and North America",
-        "unesco_link": "https://whc.unesco.org/en/list/1133"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.7242777778,
-          37.4214722222
-        ]
-      },
-      "properties": {
-        "name": "Hyrcanian Forests",
-        "country": "Azerbaijan,Iran (Islamic Republic of)",
-        "year": 2019,
-        "type": "Transnational",
-        "category": "N",
-        "criteria": "(9)",
-        "description": "<p>The Hyrcanian Forests form a unique forested massif that stretches along the Caspian Sea in Azerbaijan and Iran. The history of these broad-leaved forests dates back 25 to 50 million years, when they covered most of this Northern Temperate region. Their floristic biodiversity is remarkable with over 3,200 vascular plant species documented. To date, 180 species of birds typical of broad-leaved temperate forests and 58 mammal species have been recorded. Elements of the property comprise full ecosystems including top predators such as leopard, wolf and brown bear, and the forest has a high degree of rare and endemic tree species. The oldest trees seen here are 300-400 years old, with some possibly up to 500 years old.</p>",
-        "transboundary": true,
-        "ensemble": false,
-        "region": "Asia and the Pacific,Europe and North America",
-        "unesco_link": "https://whc.unesco.org/en/list/1584"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           26.3377777777,
           59.0577777778
         ]
@@ -1632,52 +1586,6 @@
         "ensemble": false,
         "region": "Europe and North America",
         "unesco_link": "https://whc.unesco.org/en/list/1187"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.9811111111,
-          52.7275
-        ]
-      },
-      "properties": {
-        "name": "Białowieża Forest",
-        "country": "Belarus,Poland",
-        "year": 1979,
-        "type": "Transnational",
-        "category": "N",
-        "criteria": "(9), (10)",
-        "description": "<p>The Białowieża Forest World Heritage site, on the border between Poland and Belarus, is an immense range of primary forest including both conifers and broadleaved trees covering a total area of 141,885 hectares. Situated on the watershed of the Baltic Sea and Black Sea, this transboundary property is exceptional for the opportunities it offers for biodiversity conservation. It is home to the largest population of the property’s iconic species, the European bison.</p>",
-        "transboundary": true,
-        "ensemble": false,
-        "region": "Europe and North America",
-        "unesco_link": "https://whc.unesco.org/en/list/33"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          108.8572222222,
-          34.3044444444
-        ]
-      },
-      "properties": {
-        "name": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor",
-        "country": "China,Kazakhstan,Kyrgyzstan",
-        "year": 2014,
-        "type": "Transnational",
-        "category": "C",
-        "criteria": "(2), (3), (5), (6)",
-        "description": "<p>This property is a 5,000 km section of the extensive Silk Roads network, stretching from Chang’an/Luoyang, the central capital of China in the Han and Tang dynasties, to the Zhetysu region of Central Asia. It took shape between the 2nd century BC and 1st century AD and remained in use until the 16th century, linking multiple civilizations and facilitating far-reaching exchanges of activities in trade, religious beliefs, scientific knowledge, technological innovation, cultural practices and the arts. The thirty-three components included in the routes network include capital cities and palace complexes of various empires and Khan kingdoms, trading settlements, Buddhist cave temples, ancient paths, posthouses, passes, beacon towers, sections of The Great Wall, fortifications, tombs and religious buildings.</p>",
-        "transboundary": true,
-        "ensemble": false,
-        "region": "Asia and the Pacific",
-        "unesco_link": "https://whc.unesco.org/en/list/1442"
       }
     },
     {
@@ -1793,29 +1701,6 @@
         "ensemble": false,
         "region": "Asia and the Pacific,Europe and North America",
         "unesco_link": "https://whc.unesco.org/en/list/1448"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          21.0322222222,
-          49.5338888889
-        ]
-      },
-      "properties": {
-        "name": "Wooden <em>Tserkvas</em> of the Carpathian Region in Poland and Ukraine",
-        "country": "Poland,Ukraine",
-        "year": 2013,
-        "type": "Transnational",
-        "category": "C",
-        "criteria": "(3), (4)",
-        "description": "<p>Situated in the eastern fringe of Central Europe, the transnational property numbers a selection of sixteen&nbsp;<em>tserkvas&nbsp;</em>(churches). They were built of horizontal wooden logs between the 16<sup>th</sup>&nbsp;and 19<sup>th</sup>&nbsp;centuries by communities of Orthodox and Greek Catholic faiths. The&nbsp;<em>tserkvas</em>&nbsp;bear testimony to a distinct building tradition rooted in Orthodox ecclesiastic design interwoven with elements of local tradition, and symbolic references to their communities&rsquo; cosmogony.&nbsp;&nbsp;The&nbsp;<em>tserkva</em><em>s&nbsp;</em>are built on a tri-partite plan surmounted by open quadrilateral or octagonal domes and cupolas. Integral to <em>tserkvas</em> are iconostasis screens, interior polychrome decorations, and other historic furnishings. Important elements of some <em>tserkvas</em> include&nbsp;wooden bell towers, churchyards, gatehouses and graveyards.</p>",
-        "transboundary": true,
-        "ensemble": false,
-        "region": "Europe and North America",
-        "unesco_link": "https://whc.unesco.org/en/list/1424"
       }
     },
     {
