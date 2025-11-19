@@ -168,10 +168,10 @@
         }
         
         .legend-emoji {
-            font-size: 20px;
-            margin-right: 10px;
             width: 24px;
-            text-align: center;
+            height: 24px;
+            margin-right: 10px;
+            object-fit: contain;
         }
         
         .legend-symbol {
@@ -333,7 +333,7 @@
             
             <label class="legend-item" data-type="Ensemble">
                 <input type="checkbox" checked id="filter-ensemble">
-                <div class="legend-emoji">🏛️</div>
+                <img src="ensemble.png" class="legend-emoji" alt="Ensemble">
                 <span><strong>Ensemble</strong><span class="legend-count">(437 sites)</span></span>
             </label>
             <div style="font-size: 11px; color: #666; margin-left: 58px; margin-bottom: 10px; line-height: 1.4;">
@@ -342,7 +342,7 @@
             
             <label class="legend-item" data-type="Transnational">
                 <input type="checkbox" checked id="filter-transnational">
-                <div class="legend-emoji">🌍</div>
+                <img src="transnational.png" class="legend-emoji" alt="Transnational">
                 <span><strong>Transnational</strong><span class="legend-count">(39 sites)</span></span>
             </label>
             <div style="font-size: 11px; color: #666; margin-left: 58px; margin-bottom: 10px; line-height: 1.4;">
@@ -351,7 +351,7 @@
             
             <label class="legend-item" data-type="Natural">
                 <input type="checkbox" checked id="filter-natural">
-                <div class="legend-emoji">🌳</div>
+                <img src="natural.png" class="legend-emoji" alt="Natural">
                 <span><strong>Natural</strong><span class="legend-count">(215 sites)</span></span>
             </label>
             <div style="font-size: 11px; color: #666; margin-left: 58px; margin-bottom: 10px; line-height: 1.4;">
@@ -360,7 +360,7 @@
             
             <label class="legend-item" data-type="Mixed">
                 <input type="checkbox" checked id="filter-mixed">
-                <div class="legend-emoji">⛰️</div>
+                <img src="mixed.png" class="legend-emoji" alt="Mixed">
                 <span><strong>Mixed</strong><span class="legend-count">(31 sites)</span></span>
             </label>
             <div style="font-size: 11px; color: #666; margin-left: 58px; margin-bottom: 10px; line-height: 1.4;">
@@ -369,7 +369,7 @@
             
             <label class="legend-item" data-type="Monument">
                 <input type="checkbox" checked id="filter-monument">
-                <div class="legend-emoji">🗿</div>
+                <img src="monument.png" class="legend-emoji" alt="Monument">
                 <span><strong>Monument</strong><span class="legend-count">(525 sites)</span></span>
             </label>
             <div style="font-size: 11px; color: #666; margin-left: 58px; margin-bottom: 10px; line-height: 1.4;">
@@ -534,26 +534,29 @@
                 .then(data => {
                     allData = data;
                     
-                    // Load emoji images for each type
-                    const imagePromises = Object.entries(EMOJI_MAP).map(([type, emoji]) => {
-                        return new Promise((resolve) => {
-                            const canvas = createEmojiMarker(emoji, COLOR_MAP[type]);
-                            map.loadImage(canvas.toDataURL(), (error, image) => {
-                                if (!error) {
-                                    map.addImage(`emoji-${type}`, image);
+                    // Load custom icon images
+                    const iconTypes = ['Ensemble', 'Transnational', 'Natural', 'Mixed', 'Monument'];
+                    const iconPromises = iconTypes.map(type => {
+                        return new Promise((resolve, reject) => {
+                            map.loadImage(`${type.toLowerCase()}.png`, (error, image) => {
+                                if (error) {
+                                    console.error(`Error loading ${type}:`, error);
+                                    reject(error);
+                                } else {
+                                    map.addImage(`icon-${type}`, image);
+                                    resolve();
                                 }
-                                resolve();
                             });
                         });
                     });
 
-                    Promise.all(imagePromises).then(() => {
+                    Promise.all(iconPromises).then(() => {
                         map.addSource('global-sites', {
                             type: 'geojson',
                             data: data
                         });
 
-                        // Add symbol layer with emoji icons
+                        // Add symbol layer with custom icons
                         map.addLayer({
                             'id': 'site-symbols',
                             'type': 'symbol',
@@ -561,19 +564,23 @@
                             'layout': {
                                 'icon-image': [
                                     'concat',
-                                    'emoji-',
+                                    'icon-',
                                     ['get', 'display_type']
                                 ],
                                 'icon-size': [
                                     'interpolate',
                                     ['linear'],
                                     ['zoom'],
-                                    2, 0.4,
-                                    8, 1
+                                    2, 0.3,
+                                    8, 0.7
                                 ],
-                                'icon-allow-overlap': true
+                                'icon-allow-overlap': false,
+                                'icon-ignore-placement': false
                             }
                         });
+                    }).catch(error => {
+                        console.error('Error loading icons:', error);
+                    });
 
                         // Initialize stats
                         updateStats(data);
@@ -686,9 +693,6 @@
                             map.getCanvas().style.cursor = '';
                         });
                     });
-                })
-                .catch(error => console.error('Error:', error));
-        });
     </script>
 </body>
 </html>
