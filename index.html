@@ -140,6 +140,33 @@
             text-decoration: underline;
         }
         
+        .zoom-reset-button {
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 1;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            border: none;
+            transition: all 0.2s;
+        }
+        
+        .zoom-reset-button:hover {
+            background: #f0f0f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        
+        .zoom-reset-button::before {
+            content: "🌍 ";
+            margin-right: 5px;
+        }
+        
         .stats-box {
             margin-top: 15px;
             padding: 12px;
@@ -163,6 +190,8 @@
     </nav>
     
     <div id="map"></div>
+    
+    <button class="zoom-reset-button" id="resetView">Reset View</button>
     
     <div class="map-overlay">
         <h1>Post-Soviet Heritage Strategies</h1>
@@ -236,6 +265,16 @@
 
         // Add navigation controls
         map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+        // Add reset view button functionality
+        document.getElementById('resetView').addEventListener('click', function() {
+            map.flyTo({
+                center: [50, 50],
+                zoom: 3,
+                duration: 1500,
+                essential: true
+            });
+        });
 
         // Function to get country from properties (handles transnational sites)
         function getPrimaryCountry(countryString) {
