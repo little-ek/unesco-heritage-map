@@ -38,6 +38,37 @@
             z-index: 1;
             max-height: calc(100vh - 100px);
             overflow-y: auto;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .map-overlay.collapsed {
+            transform: translateX(-440px);
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .toggle-sidebar-btn {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            background: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 2;
+            transition: all 0.2s;
+        }
+        
+        .toggle-sidebar-btn:hover {
+            background: #f0f0f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        
+        .toggle-sidebar-btn.sidebar-open {
+            left: 460px;
         }
         
         h1 {
@@ -277,7 +308,9 @@
     
     <div id="map"></div>
     
-    <div class="map-overlay">
+    <button class="toggle-sidebar-btn sidebar-open" id="toggleSidebar" title="Hide/Show Info Panel">◀</button>
+    
+    <div class="map-overlay" id="mapOverlay">
         <h1>Global UNESCO World Heritage Sites</h1>
         
         <div class="narrative-text">
@@ -403,12 +436,33 @@
         const map = new maplibregl.Map({
             container: 'map',
             style: style,
-            center: [35, 35],
-            zoom: 2,
-            minZoom: 1.5
+            center: [20, 30],
+            zoom: 1.5,
+            minZoom: 1
         });
 
         map.addControl(new maplibregl.NavigationControl(), 'top-left');
+
+        // Toggle sidebar functionality
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const overlay = document.getElementById('mapOverlay');
+        let sidebarOpen = true;
+
+        toggleBtn.addEventListener('click', function() {
+            sidebarOpen = !sidebarOpen;
+            
+            if (sidebarOpen) {
+                overlay.classList.remove('collapsed');
+                toggleBtn.classList.add('sidebar-open');
+                toggleBtn.innerHTML = '◀';
+                toggleBtn.title = 'Hide Info Panel';
+            } else {
+                overlay.classList.add('collapsed');
+                toggleBtn.classList.remove('sidebar-open');
+                toggleBtn.innerHTML = '▶';
+                toggleBtn.title = 'Show Info Panel';
+            }
+        });
 
         let allData = null;
 

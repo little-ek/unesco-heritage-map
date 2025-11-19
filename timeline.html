@@ -148,10 +148,42 @@
         .popup-field strong {
             color: #555;
         }
+        
+        .map-overlay.collapsed {
+            transform: translateX(-440px);
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .toggle-sidebar-btn {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            background: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 2;
+            transition: all 0.2s;
+        }
+        
+        .toggle-sidebar-btn:hover {
+            background: #f0f0f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        
+        .toggle-sidebar-btn.sidebar-open {
+            left: 460px;
+        }
     </style>
 </head>
 <body>
     <div id="map"></div>
+    
+    <button class="toggle-sidebar-btn sidebar-open" id="toggleSidebar" title="Hide/Show Info Panel">◀</button>
     
     <nav style="position: absolute; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 15px; align-items: center;">
         <span style="font-weight: 600; font-size: 14px; color: #333;">UNESCO Heritage Atlas:</span>
@@ -161,7 +193,7 @@
         <a href="bukhara.html" style="color: #666; text-decoration: none; font-size: 14px; padding: 5px 10px;">Bukhara Detail</a>
     </nav>
     
-    <div class="map-overlay" style="top: 70px;">
+    <div class="map-overlay" id="mapOverlay" style="top: 70px;">
         <h1>Timeline: When Ensemble Strategy Matters</h1>
         <p class="subtitle">
             Between 1990 and 2024, the temporal pattern of inscriptions reveals strategic deployment of ensemble frameworks across four distinct phases. <strong style="color: #c0392b;">When</strong> a state nominates heritage reveals as much as <strong>what</strong> it nominates.
@@ -253,6 +285,28 @@
             if (year >= 2014 && year <= 2023) return '#F4A460'; // Sandy brown
             return '#95a5a6'; // Default gray
         }
+
+
+        // Toggle sidebar functionality
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const overlay = document.getElementById('mapOverlay');
+        let sidebarOpen = true;
+
+        toggleBtn.addEventListener('click', function() {
+            sidebarOpen = !sidebarOpen;
+            
+            if (sidebarOpen) {
+                overlay.classList.remove('collapsed');
+                toggleBtn.classList.add('sidebar-open');
+                toggleBtn.innerHTML = '◀';
+                toggleBtn.title = 'Hide Info Panel';
+            } else {
+                overlay.classList.add('collapsed');
+                toggleBtn.classList.remove('sidebar-open');
+                toggleBtn.innerHTML = '▶';
+                toggleBtn.title = 'Show Info Panel';
+            }
+        });
 
         map.on('load', function() {
             fetch('unesco_sites.geojson')

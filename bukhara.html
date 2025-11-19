@@ -168,6 +168,36 @@
             color: #666;
             line-height: 1.5;
         }
+        
+        .map-overlay.collapsed {
+            transform: translateX(-420px);
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .toggle-sidebar-btn {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            background: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 2;
+            transition: all 0.2s;
+        }
+        
+        .toggle-sidebar-btn:hover {
+            background: #f0f0f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        
+        .toggle-sidebar-btn.sidebar-open {
+            left: 420px;
+        }
     </style>
 </head>
 <body>
@@ -181,7 +211,9 @@
     
     <div id="map"></div>
     
-    <div class="map-overlay">
+    <button class="toggle-sidebar-btn sidebar-open" id="toggleSidebar" title="Hide/Show Info Panel">◀</button>
+    
+    <div class="map-overlay" id="mapOverlay">
         <h1>Inside the Ensemble: Bukhara</h1>
         <p class="subtitle">
             Inscribed in 1993 as the <strong>"Historic Centre of Bukhara,"</strong> this 220-hectare ensemble demonstrates how inherited Soviet frameworks shaped UNESCO presentation strategies. The nomination embedded dozens of medieval structures within a comprehensive urban narrative—an approach enabled by Bukhara's 1985 designation as a Soviet "museum-preserve" with unified state ownership and management.
@@ -268,6 +300,28 @@
         function getShapeByCategory(category) {
             return category === 'Religious' ? 'circle' : 'square';
         }
+
+
+        // Toggle sidebar functionality
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const overlay = document.getElementById('mapOverlay');
+        let sidebarOpen = true;
+
+        toggleBtn.addEventListener('click', function() {
+            sidebarOpen = !sidebarOpen;
+            
+            if (sidebarOpen) {
+                overlay.classList.remove('collapsed');
+                toggleBtn.classList.add('sidebar-open');
+                toggleBtn.innerHTML = '◀';
+                toggleBtn.title = 'Hide Info Panel';
+            } else {
+                overlay.classList.add('collapsed');
+                toggleBtn.classList.remove('sidebar-open');
+                toggleBtn.innerHTML = '▶';
+                toggleBtn.title = 'Show Info Panel';
+            }
+        });
 
         map.on('load', function() {
             // Add UNESCO boundary (approximate historic center)
