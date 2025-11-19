@@ -59,13 +59,13 @@
         }
         
         .narrative-text strong {
-            color: #c0392b;
+            color: #000000;
         }
         
         .legend {
             margin-top: 20px;
             padding-top: 20px;
-            border-top: 2px solid #eee;
+            border-top: 2px solid #ffffff;
         }
         
         .legend-title {
@@ -80,6 +80,25 @@
             align-items: center;
             margin-bottom: 10px;
             font-size: 13px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        
+        .legend-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .legend-item.disabled {
+            opacity: 0.4;
+        }
+        
+        .legend-item input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
         }
         
         .legend-symbol {
@@ -168,70 +187,73 @@
         <div class="narrative-text">
             <p>
                 The <strong>1,247 UNESCO World Heritage Sites</strong> span every continent and represent 
-                humanity's shared cultural and natural heritage. But how nations <strong>frame</strong> 
-                these sites reveals strategic choices about identity and presentation.
+                humanity's shared cultural and natural heritage. But how nations frame
+                these sites reveals strategic choices about identity and presentation. An <strong style="color: #e74c3c;"> "ensemble"</strong>  refers to a grouping of buildings or architectural elements that gain their significance from their collective relationship—through their architectural coherence, their homogeneity, or their placement within a landscape—rather than from individual monuments standing alone. This is particularly relevant for historic urban centers and architectural complexes where the value lies in the overall composition rather than isolated structures.
             </p>
             
             <p>
-                This map shows <strong>five distinct nomination approaches</strong>, with 
+                This map shows five distinct nomination approaches, with 
                 <strong style="color: #e74c3c;">ensemble nominations</strong> (437 sites, 43% of cultural sites) 
                 being the most common strategy for presenting cultural heritage.
             </p>
             
-            <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-style: italic; color: #666;">
+             <p>
                 Notice how <strong style="color: #e74c3c;">ensemble nominations</strong> cluster in 
-                Latin America (51%), the Arab world (47%), and Europe (44%) — regions with traditions 
-                of presenting heritage within <strong>urban or landscape contexts</strong> rather than 
+                Latin America (51%), the Arab world (47%), and Europe (44%). These are regions with traditions 
+                of presenting heritage within urban or landscape contexts rather than 
                 as isolated monuments.
             </p>
         </div>
         
         <div class="legend">
-            <div class="legend-title">Nomination Strategies (Priority Hierarchy):</div>
-            <div class="legend-item">
+            <div class="legend-title">Filter by Type (Click to toggle):</div>
+            <label class="legend-item" data-type="Ensemble">
+                <input type="checkbox" checked id="filter-ensemble">
                 <div class="legend-symbol" style="background-color: #e74c3c;"></div>
                 <span><strong>Ensemble</strong><span class="legend-count">(437 sites)</span></span>
-            </div>
-            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+            </label>
+            <div style="font-size: 11px; color: #666; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
                 Historic cities, cultural landscapes, urban districts
             </div>
             
-            <div class="legend-item">
+            <label class="legend-item" data-type="Transnational">
+                <input type="checkbox" checked id="filter-transnational">
                 <div class="legend-symbol" style="background-color: #3498db;"></div>
                 <span><strong>Transnational</strong><span class="legend-count">(39 sites)</span></span>
-            </div>
-            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+            </label>
+            <div style="font-size: 11px; color: #666; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
                 Shared by multiple countries (non-ensemble)
             </div>
             
-            <div class="legend-item">
+            <label class="legend-item" data-type="Natural">
+                <input type="checkbox" checked id="filter-natural">
                 <div class="legend-symbol" style="background-color: #27ae60;"></div>
                 <span><strong>Natural</strong><span class="legend-count">(215 sites)</span></span>
-            </div>
-            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+            </label>
+            <div style="font-size: 11px; color: #666; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
                 Outstanding natural features, ecosystems, biodiversity
             </div>
             
-            <div class="legend-item">
+            <label class="legend-item" data-type="Mixed">
+                <input type="checkbox" checked id="filter-mixed">
                 <div class="legend-symbol" style="background-color: #f39c12;"></div>
                 <span><strong>Mixed</strong><span class="legend-count">(31 sites)</span></span>
-            </div>
-            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+            </label>
+            <div style="font-size: 11px; color: #666; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
                 Both cultural and natural significance
             </div>
             
-            <div class="legend-item">
+            <label class="legend-item" data-type="Monument">
+                <input type="checkbox" checked id="filter-monument">
                 <div class="legend-symbol" style="background-color: #95a5a6;"></div>
                 <span><strong>Monument</strong><span class="legend-count">(525 sites)</span></span>
-            </div>
-            <div style="font-size: 11px; color: #666; margin-left: 30px; margin-bottom: 10px; line-height: 1.4;">
+            </label>
+            <div style="font-size: 11px; color: #666; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
                 Individual cultural monuments, archaeological sites
             </div>
             
             <div style="margin-top: 15px; padding: 12px; background: #f8f9fa; border-radius: 4px; font-size: 11px; color: #555; line-height: 1.5;">
-                <strong>Note:</strong> When sites have multiple characteristics (e.g., both ensemble and transnational), 
-                they're colored by the highest priority category. Ensembles take precedence as they're most relevant 
-                to this atlas's argument.
+                <strong>💡 Tip:</strong> Click checkboxes to show/hide different types. Uncheck all except "Ensemble" to see only ensemble sites (437 total).
             </div>
         </div>
     </div>
@@ -290,6 +312,43 @@
                             'circle-stroke-color': '#ffffff',
                             'circle-opacity': 0.8
                         }
+                    });
+
+                    // Filter functionality
+                    const checkboxes = {
+                        'Ensemble': document.getElementById('filter-ensemble'),
+                        'Transnational': document.getElementById('filter-transnational'),
+                        'Natural': document.getElementById('filter-natural'),
+                        'Mixed': document.getElementById('filter-mixed'),
+                        'Monument': document.getElementById('filter-monument')
+                    };
+
+                    function updateFilter() {
+                        const activeTypes = Object.keys(checkboxes).filter(type => checkboxes[type].checked);
+                        
+                        if (activeTypes.length === 0) {
+                            // If nothing selected, hide all
+                            map.setFilter('site-circles', ['==', 'display_type', '']);
+                        } else {
+                            // Show only selected types
+                            map.setFilter('site-circles', ['in', 'display_type', ...activeTypes]);
+                        }
+
+                        // Update legend item styling
+                        document.querySelectorAll('.legend-item').forEach(item => {
+                            const type = item.getAttribute('data-type');
+                            const checkbox = item.querySelector('input[type="checkbox"]');
+                            if (checkbox && !checkbox.checked) {
+                                item.classList.add('disabled');
+                            } else {
+                                item.classList.remove('disabled');
+                            }
+                        });
+                    }
+
+                    // Add event listeners to checkboxes
+                    Object.values(checkboxes).forEach(checkbox => {
+                        checkbox.addEventListener('change', updateFilter);
                     });
 
                     const popup = new maplibregl.Popup({
