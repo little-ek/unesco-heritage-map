@@ -6,21 +6,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          60.3581,
-          41.3783
+          44.71028,
+          41.095
         ]
       },
       "properties": {
-        "name": "Itchan Kala",
-        "country": "Uzbekistan",
-        "year": 1990,
-        "type": "Cultural",
-        "criteria": "iii, iv, v",
-        "religious": "Yes",
-        "transboundary": "No",
-        "description": "Itchan Kala is the inner town (protected by brick walls some 10 m high) of the old Khiva oasis, which was the last resting-place of caravans before crossing the desert to Iran. Although few very old monuments still remain, it is a coherent and well-preserved example of the Muslim architecture of Central Asia. There are several outstanding structures such as the Djuma Mosque, the mausoleums and the madrasas and the two magnificent palaces built at the beginning of the 19th century by Alla-Kulli-Khan.",
-        "unesco_link": "https://whc.unesco.org/en/list/543/",
-        "notes": "Contains mosques/madrasahs"
+        "name": "Monasteries of Haghpat and Sanahin",
+        "country": "Armenia",
+        "year": 1996,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "<p>These two Byzantine monasteries in the Tumanian region from the period of prosperity during the Kiurikian dynasty (10th to 13th century) were important centres of learning. Sanahin was renown for its school of illuminators and calligraphers. The two monastic complexes represent the highest flowering of Armenian religious architecture, whose unique style developed from a blending of elements of Byzantine ecclesiastical architecture and the traditional vernacular architecture of the Caucasian region.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/777"
       }
     },
     {
@@ -28,43 +29,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          64.4286,
-          39.7747
+          44.818525,
+          40.140439
         ]
       },
       "properties": {
-        "name": "Historic Centre of Bukhara",
-        "country": "Uzbekistan",
-        "year": 1993,
-        "type": "Cultural",
-        "criteria": "ii, iv, vi",
-        "religious": "Yes",
-        "transboundary": "No",
-        "description": "Bukhara, which is situated on the Silk Route, is more than 2,000 years old. It is the most complete example of a medieval city in Central Asia, with an urban fabric that has remained largely intact. Monuments of particular interest include the famous tomb of Ismail Samani, a masterpiece of 10th-century Muslim architecture, and a large number of 17th-century madrasas.",
-        "unesco_link": "https://whc.unesco.org/en/list/602",
-        "notes": "Mosques, madrasahs, shrines"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          66.8333,
-          39.05
-        ]
-      },
-      "properties": {
-        "name": "Historic Centre of Shakhrisyabz",
-        "country": "Uzbekistan",
+        "name": "Monastery of Geghard and the Upper Azat Valley",
+        "country": "Armenia",
         "year": 2000,
-        "type": "Cultural",
-        "criteria": "iii, iv",
-        "religious": "Yes",
-        "transboundary": "No",
-        "description": "The historic centre of Shakhrisyabz contains a collection of exceptional monuments and ancient quarters which bear witness to the city's secular development, and particularly to the period of its apogee, under the rule of Amir Temur and the Temurids, in the 15th-16th century.",
-        "unesco_link": "https://whc.unesco.org/en/list/885",
-        "notes": "Islamic monuments, mosques"
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2)",
+        "description": "<p>The monastery of Geghard contains a number of churches and tombs, most of them cut into the rock, which illustrate the very peak of Armenian medieval architecture. The complex of medieval buildings is set into a landscape of great natural beauty, surrounded by towering cliffs at the entrance to the Azat Valley.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/960"
       }
     },
     {
@@ -72,21 +52,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          66.975,
-          39.6542
+          44.29514,
+          40.15931
         ]
       },
       "properties": {
-        "name": "Samarkand — Crossroad of Cultures",
-        "country": "Uzbekistan",
-        "year": 2001,
-        "type": "Cultural",
-        "criteria": "i, ii, iv",
-        "religious": "Yes",
-        "transboundary": "No",
-        "description": "The historic town of Samarkand is a crossroad and melting pot of the world's cultures. Founded in the 7th century B.C. as ancient Afrasiab, Samarkand had its most significant development in the Timurid period from the 14th to the 15th centuries. The major monuments include the Registan Mosque and madrasas, Bibi-Khanum Mosque, the Shakhi-Zinda compound and the Gur-Emir ensemble, as well as Ulugh-Beg's Observatory.",
-        "unesco_link": "https://whc.unesco.org/en/list/603",
-        "notes": "Contains mosques, madrasas, religious ensemble."
+        "name": "Cathedral and Churches of Echmiatsin and the Archaeological Site of Zvartnots",
+        "country": "Armenia",
+        "year": 2000,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (3)",
+        "description": "<p>The cathedral and churches of Echmiatsin and the archaeological remains at Zvartnots graphically illustrate the evolution and development of the Armenian central-domed cross-hall type of church, which exerted a profound influence on architectural and artistic development in the region.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1011"
       }
     },
     {
@@ -94,21 +75,91 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          69.68555833,
-          39.44148889
+          49.83333333,
+          40.36666667
         ]
       },
       "properties": {
-        "name": "Silk Roads: Zarafshan-Karakum Corridor",
-        "country": "Tajikistan,Turkmenistan,Uzbekistan",
+        "name": "Walled City of Baku with the Shirvanshah's Palace and Maiden Tower",
+        "country": "Azerbaijan",
+        "year": 2000,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(4)",
+        "description": "<p>Built on a site inhabited since the Palaeolithic period, the Walled City of Baku reveals evidence of Zoroastrian, Sasanian, Arabic, Persian, Shirvani, Ottoman, and Russian presence in cultural continuity. The Inner City (Icheri Sheher) has preserved much of its 12th-century defensive walls. The 12th-century Maiden Tower (Giz Galasy) is built over earlier structures dating from the 7th to 6th centuries BC, and the 15th-century Shirvanshahs' Palace is one of the pearls of Azerbaijan's architecture.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/958"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.375,
+          40.125
+        ]
+      },
+      "properties": {
+        "name": "Gobustan Rock Art Cultural Landscape",
+        "country": "Azerbaijan",
+        "year": 2007,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(3)",
+        "description": "<p>Gobustan Rock Art Cultural Landscape covers three areas of a plateau of rocky boulders rising out of the semi-desert of central Azerbaijan, with an outstanding collection of more than 6,000 rock engravings bearing testimony to 40,000 years of rock art. The site also features the remains of inhabited caves, settlements and burials, all reflecting an intensive human use by the inhabitants of the area during the wet period that followed the last Ice Age, from the Upper Paleolithic to the Middle Ages. The site, which covers an area of 537 ha, is part of the larger protected Gobustan Reservation.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1076"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1875,
+          41.2033333333
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Sheki with the Khan’s Palace",
+        "country": "Azerbaijan",
+        "year": 2019,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (5)",
+        "description": "The historic city of Sheki is located at the foot of the Greater Caucasus Mountains and divided in two by the Gurjana River. While the older northern part is built on the mountain, its southern part extends into the river valley. Its historic centre, rebuilt after the destruction of an earlier town by mudflows in the 18th century, is characterized by a traditional architectural ensemble of houses with high gabled roofs. Located along important historic trade routes, the city's architecture is influenced by Safavid, Qadjar and Russian building traditions. The Khan Palace, in the northeast of the city, and a number of merchant houses reflect the wealth generated by silkworm breeding and the trade in silk cocoons from the late 18th to the 19th centuries.",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1549"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8854,
+          40.7059
+        ]
+      },
+      "properties": {
+        "name": "Cultural Landscape of Khinalig People and “Köç Yolu” Transhumance Route",
+        "country": "Azerbaijan",
         "year": 2023,
-        "type": "Cultural",
-        "criteria": "ii, iii, v",
-        "religious": "No",
-        "transboundary": "Yes",
-        "description": "The Zarafshan-Karakum Corridor is a key section of the Silk Roads in Central Asia that connects other corridors from all directions. Located in rugged mountains, fertile river valleys, and uninhabitable desert, the 866-kilometre corridor runs from east to west along the Zarafshan River and further southwest following the ancient caravan roads crossing the Karakum Desert to the Merv Oasis. Channelling much of the east-west exchange along the Silk Roads from the 2nd century BCE to the 16th century CE, a large quantity of goods was traded along the corridor. People travelled, settled, conquered, or were defeated here, making it a melting pot of ethnicities, cultures, religions, sciences, and technologies.",
-        "unesco_link": "https://whc.unesco.org/en/list/1675",
-        "notes": "Trade Route"
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(3), (5)",
+        "description": "This cultural landscape is comprised of the high-mountain Khinalig village in northern Azerbaijan, high-altitude summer pastures and agricultural terraces in the Greater Caucasus Mountains, winter pastures in the lowland plains in central Azerbaijan, and the connecting 200-kilometre-long seasonal transhumance route called Köç Yolu (“Migration Route”). The village of Khinalig is home to the semi-nomadic Khinalig people, whose culture and lifestyle are defined by the seasonal migration between summer and winter pastures, and who retain the ancient way of long-distance vertical transhumance. The organically evolved network including ancient routes, temporary pastures and camping sites, mausoleums, and mosques illustrates a sustainable eco-social system adapted to extreme environmental conditions.",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1696"
       }
     },
     {
@@ -116,21 +167,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          68.28,
-          43.3
+          26.47272222,
+          53.45108333
         ]
       },
       "properties": {
-        "name": "Mausoleum of Khoja Ahmed Yasawi",
-        "country": "Kazakhstan",
-        "year": 2003,
-        "type": "Cultural",
-        "criteria": "i, iii, iv",
-        "religious": "Yes",
-        "transboundary": "No",
-        "description": "The Mausoleum of Khoja Ahmed Yasawi, in the town of Yasi, now Turkestan, was built at the time of Timur (Tamerlane), from 1389 to 1405. In this partly unfinished building, Persian master builders experimented with architectural and structural solutions later used in the construction of Samarkand, the capital of the Timurid Empire. Today, it is one of the largest and best-preserved constructions of the Timurid period.",
-        "unesco_link": "https://whc.unesco.org/en/list/1103",
-        "notes": "Major Sufi pilgrimage site"
+        "name": "Mir Castle Complex",
+        "country": "Belarus",
+        "year": 2000,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "<p>The construction of this castle began at the end of the 15th century, in Gothic style. It was subsequently extended and reconstructed, first in the Renaissance and then in the Baroque style. After being abandoned for nearly a century and suffering severe damage during the Napoleonic period, the castle was restored at the end of the 19th century, with the addition of a number of other elements and the landscaping of the surrounding area as a park. Its present form is graphic testimony to its often turbulent history.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/625"
       }
     },
     {
@@ -138,21 +190,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          75.52,
-          43.78
+          26.69139,
+          53.22278
         ]
       },
       "properties": {
-        "name": "Petroglyphs of the Archaeological Landscape of Tanbaly",
-        "country": "Kazakhstan",
-        "year": 2004,
-        "type": "Cultural",
-        "criteria": "iii",
-        "religious": "Partially",
-        "transboundary": "No",
-        "description": "Set around the lush Tanbaly Gorge, amidst the vast, arid Chu-Ili mountains, is a remarkable concentration of some 5,000 petroglyphs (rock carvings) dating from the second half of the second millennium BC to the beginning of the 20th century. Distributed among 48 complexes with associated settlements and burial grounds, they are testimonies to the husbandry, social organization and rituals of pastoral peoples. Human settlements in the site are often multilayered and show occupation through the ages. A huge number of ancient tombs are also to be found including stone enclosures with boxes and cists (middle and late Bronze Age), and mounds (kurgans) of stone and earth (early Iron Age to the present). The central canyon contains the densest concentration of engravings and what are believed to be altars, suggesting that these places were used for sacrificial offerings.",
-        "unesco_link": "https://whc.unesco.org/en/list/1145",
-        "notes": "Ritual/Religious significance"
+        "name": "Architectural, Residential and Cultural Complex of the Radziwill Family at Nesvizh",
+        "country": "Belarus",
+        "year": 2005,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (4), (6)",
+        "description": "<p>The Architectural, Residential and Cultural Complex of the Radziwill Family at Nesvizh is located in central Belarus. The Radziwill dynasty, who built and kept the ensemble from the 16th century until 1939, gave birth to some of the most important personalities in European history and culture. Due to their efforts, the town of Nesvizh came to exercise great influence in the sciences, arts, crafts and architecture. The complex consists of the residential castle and the mausoleum Church of Corpus Christi with their setting. The castle has ten interconnected buildings, which developed as an architectural whole around a six-sided courtyard. The palaces and church became important prototypes marking the development of architecture throughout Central Europe and Russia.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1196"
       }
     },
     {
@@ -160,21 +213,137 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          69.17,
-          50.5
+          24.74,
+          59.437
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre (Old Town) of Tallinn",
+        "country": "Estonia",
+        "year": 1997,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "<p>The origins of Tallinn date back to the 13th century, when a castle was built there by the crusading knights of the Teutonic Order. It developed as a major centre of the Hanseatic League, and its wealth is demonstrated by the opulence of the public buildings (the churches in particular) and the domestic architecture of the merchants' houses, which have survived to a remarkable degree despite the ravages of fire and war in the intervening centuries.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/822"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7210277778,
+          41.8422777778
+        ]
+      },
+      "properties": {
+        "name": "Historical Monuments of Mtskheta",
+        "country": "Georgia",
+        "year": 1994,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(3), (4)",
+        "description": "<p>The historic churches of Mtskheta, former capital of Georgia, are outstanding examples of medieval religious architecture in the Caucasus. They show the high artistic and cultural level attained by this ancient kingdom.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/708"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.009,
+          42.914
+        ]
+      },
+      "properties": {
+        "name": "Upper Svaneti",
+        "country": "Georgia",
+        "year": 1996,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(4), (5)",
+        "description": "<p>Preserved by its long isolation, the Upper Svaneti region of the Caucasus is an exceptional example of mountain scenery with medieval-type villages and tower-houses. The village of Chazhashi still has more than 200 of these very unusual houses, which were used both as dwellings and as defence posts against the invaders who plagued the region.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/709"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.7683333333,
+          42.2947222222
+        ]
+      },
+      "properties": {
+        "name": "Gelati Monastery",
+        "country": "Georgia",
+        "year": 1994,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(4)",
+        "description": "<p>Founded in 1106 in the west of Georgia, the Monastery of Gelati is a masterpiece of the Golden Age of medieval Georgia, a period of political strength and economic growth between the 11th and 13th centuries. It is characterized by the facades of smoothly hewn large blocks, balanced proportions and blind arches for exterior decoration. The Gelati monastery, one of the largest medieval Orthodox monasteries, was also a centre of science and education and the Academy it housed was one of the most important centres of culture in ancient Georgia.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/710"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.9512,
+          41.7022777778
+        ]
+      },
+      "properties": {
+        "name": "Colchic Rainforests and Wetlands",
+        "country": "Georgia",
+        "year": 2021,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(9), (10)",
+        "description": "<p>The property comprises seven component parts, within an 80km long corridor along the warm-temperate and extremely humid eastern coast of the Black Sea. They provide a series of the most typical Colchic ecosystems at altitudes ranging from sea level to more than 2,500 metres above it. The main ecosystems are ancient deciduous Colchic rainforests and wetlands, percolation bogs and other mire types of the distinct Colchic mire region. The extremely humid broad-leaved rainforests comprise a highly diverse flora and fauna, with very high densities of endemic and relict species, with significant numbers of globally threatened species and relict species, which survived the glacial cycles of the Tertiary. The site is home to approximately 1,100 species of vascular and non-vascular plants, including 44 threatened vascular plan species, and almost 500 species of vertebrates, and a high number of invertebrate species. The site also harbours 19 threatened animal species including sturgeon, notably the critically endangered Colchic Sturgeon. It is a key stopover for many globally threatened birds that migrate through the Batumi bottleneck.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1616"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.1888888889,
+          50.4333333333
         ]
       },
       "properties": {
         "name": "Saryarka – Steppe and Lakes of Northern Kazakhstan",
         "country": "Kazakhstan",
         "year": 2008,
-        "type": "Natural",
-        "criteria": "ix, x",
-        "religious": "No",
-        "transboundary": "No",
-        "description": "Saryarka - Steppe and Lakes of Northern Kazakhstan comprises two protected areas: Naurzum State Nature Reserve and Korgalzhyn State Nature Reserve totalling 450,344 ha. It features wetlands of outstanding importance for migratory water birds, including globally threatened species, among them the extremely rare Siberian white crane, the Dalmatian pelican, Pallas&rsquo;s fish eagle, to name but a few. These wetlands are key stopover points and crossroads on the Central Asian flyway of birds from Africa, Europe and South Asia to their breeding places in Western and Eastern Siberia. The 200,000 ha Central Asian steppe areas included in the property provide a valuable refuge for over half the species of the region&rsquo;s steppe flora, a number of threatened bird species and the critically endangered Saiga antelope, formerly an abundant species much reduced by poaching. The property includes two groups of fresh and salt water lakes situated on a watershed between rivers flowing north to the Arctic and south into the Aral-Irtysh basin.",
-        "unesco_link": "https://whc.unesco.org/en/list/1102",
-        "notes": "Nature reserve, bird migration"
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(9), (10)",
+        "description": "<p>Saryarka - Steppe and Lakes of Northern Kazakhstan comprises two protected areas: Naurzum State Nature Reserve and Korgalzhyn State Nature Reserve totalling 450,344 ha. It features wetlands of outstanding importance for migratory water birds, including globally threatened species, among them the extremely rare Siberian white crane, the Dalmatian pelican, Pallas&rsquo;s fish eagle, to name but a few. These wetlands are key stopover points and crossroads on the Central Asian flyway of birds from Africa, Europe and South Asia to their breeding places in Western and Eastern Siberia. The 200,000 ha Central Asian steppe areas included in the property provide a valuable refuge for over half the species of the region&rsquo;s steppe flora, a number of threatened bird species and the critically endangered Saiga antelope, formerly an abundant species much reduced by poaching. The property includes two groups of fresh and salt water lakes situated on a watershed between rivers flowing north to the Arctic and south into the Aral-Irtysh basin.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1102"
       }
     },
     {
@@ -182,21 +351,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          79.9,
-          43.25
+          68.2710555556,
+          43.2976944444
         ]
       },
       "properties": {
-        "name": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor",
-        "country": "Kazakhstan, Kyrgyzstan, China",
-        "year": 2014,
-        "type": "Cultural",
-        "criteria": "ii, iii, v, vi",
-        "religious": "No",
-        "transboundary": "Yes",
-        "description": "This property is a 5,000 km section of the extensive Silk Roads network, stretching from Chang’an/Luoyang, the central capital of China in the Han and Tang dynasties, to the Zhetysu region of Central Asia. It took shape between the 2nd century BC and 1st century AD and remained in use until the 16th century, linking multiple civilizations and facilitating far-reaching exchanges of activities in trade, religious beliefs, scientific knowledge, technological innovation, cultural practices and the arts. The thirty-three components included in the routes network include capital cities and palace complexes of various empires and Khan kingdoms, trading settlements, Buddhist cave temples, ancient paths, posthouses, passes, beacon towers, sections of The Great Wall, fortifications, tombs and religious buildings.",
-        "unesco_link": "https://whc.unesco.org/en/list/1442",
-        "notes": "Trade Route"
+        "name": "Mausoleum of Khoja Ahmed Yasawi",
+        "country": "Kazakhstan",
+        "year": 2003,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(1), (3), (4)",
+        "description": "<p>The Mausoleum of Khoja Ahmed Yasawi, in the town of Yasi, now Turkestan, was built at the time of Timur (Tamerlane), from 1389 to 1405. In this partly unfinished building, Persian master builders experimented with architectural and structural solutions later used in the construction of Samarkand, the capital of the Timurid Empire. Today, it is one of the largest and best-preserved constructions of the Timurid period.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1103"
       }
     },
     {
@@ -204,21 +374,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          70.82,
-          42.5
+          75.535,
+          43.80333333
         ]
       },
       "properties": {
-        "name": "Western Tien-Shan",
-        "country": "Kazakhstan, Kyrgyzstan, Uzbekistan",
-        "year": 2016,
-        "type": "Natural",
-        "criteria": "x",
-        "religious": "No",
-        "transboundary": "Yes",
-        "description": "The transnational property is located in the Tien-Shan mountain system, one of the largest mountain ranges in the world. Western Tien-Shan ranges in altitude from 700 to 4,503 m. It features diverse landscapes, which are home to exceptionally rich biodiversity. It is of global importance as a centre of origin for a number of cultivated fruit crops and is home to a great diversity of forest types and unique plant community associations.",
-        "unesco_link": "https://whc.unesco.org/en/list/1490",
-        "notes": "Mountain ecosystem"
+        "name": "Petroglyphs of the Archaeological Landscape of Tanbaly",
+        "country": "Kazakhstan",
+        "year": 2004,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(3)",
+        "description": "<p>Set around the lush Tanbaly Gorge, amidst the vast, arid Chu-Ili mountains, is a remarkable concentration of some 5,000 petroglyphs (rock carvings) dating from the second half of the second millennium BC to the beginning of the 20th century. Distributed among 48 complexes with associated settlements and burial grounds, they are testimonies to the husbandry, social organization and rituals of pastoral peoples. Human settlements in the site are often multilayered and show occupation through the ages. A huge number of ancient tombs are also to be found including stone enclosures with boxes and cists (middle and late Bronze Age), and mounds (kurgans) of stone and earth (early Iron Age to the present). The central canyon contains the densest concentration of engravings and what are believed to be altars, suggesting that these places were used for sacrificial offerings.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1145"
       }
     },
     {
@@ -226,21 +397,965 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          61.67,
-          42.5
+          72.7827777778,
+          40.5311111111
         ]
       },
       "properties": {
-        "name": "Cold Winter Deserts of Turan",
-        "country": "Kazakhstan, Turkmenistan, Uzbekistan",
+        "name": "Sulaiman-Too Sacred Mountain",
+        "country": "Kyrgyzstan",
+        "year": 2009,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(3), (6)",
+        "description": "<p>Sulaiman-Too Sacred Mountain Kyrgyzstan dominates the Fergana Valley and forms the backdrop to the city of Osh, at the crossroads of important routes on the Central Asian Silk Roads. For more than one and a half millennia, Sulaiman was a beacon for travellers revered as a sacred mountain. Its five peaks and slopes contain numerous ancient places of worship and caves with petroglyphs as well as two largely reconstructed 16th century mosques. One hundred and one sites with petroglyphs representing humans and animals as well as geometrical forms have been indexed in the property so far. The site numbers 17 places of worship, which are still in use, and many that are not. Dispersed around the mountain peaks they are connected by footpaths. The cult sites are believed to provide cures for barrenness, headaches, and back pain and give the blessing of longevity. Veneration for the mountain blends pre-Islamic and Islamic beliefs. The site is believed to represent the most complete example of a sacred mountain anywhere in Central Asia, worshipped over several millennia.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1230"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.11667,
+          56.95417
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Riga",
+        "country": "Latvia",
+        "year": 1997,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(1), (2)",
+        "description": "<p>Riga was a major centre of the Hanseatic League, deriving its prosperity in the 13th–15th centuries from the trade with central and eastern Europe. The urban fabric of its medieval centre reflects this prosperity, though most of the earliest buildings were destroyed by fire or war. Riga became an important economic centre in the 19th century, when the suburbs surrounding the medieval town were laid out, first with imposing wooden buildings in neoclassical style and then in <em>Jugendstil</em> . It is generally recognized that Riga has the finest collection of art nouveau buildings in Europe.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/852"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9715277778,
+          56.96775
+        ]
+      },
+      "properties": {
+        "name": "Old town of Kuldīga",
+        "country": "Latvia",
         "year": 2023,
-        "type": "Natural",
-        "criteria": "ix, x",
-        "religious": "No",
-        "transboundary": "Yes",
-        "description": "This transnational property comprises fourteen component parts found across arid areas of Central Asia’s temperate zone between the Caspian Sea and the Turanian high mountains. The area is subject to extreme climatic conditions with very cold winters and hot summers, and boasts an exceptionally diverse flora and fauna that has adapted to the harsh conditions. The property also represents a considerable diversity of desert ecosystems, spanning a distance of more than 1,500 kilometres from East to West. Each of the component parts complements the others in terms of biodiversity, desert types, and ongoing ecological processes.",
-        "unesco_link": "https://whc.unesco.org/en/list/1693",
-        "notes": "Desert ecosystem"
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(5)",
+        "description": "Located in the western part of Latvia, the town of Kuldīga is an exceptionally well-preserved example of a traditional urban settlement, which developed from a small medieval hamlet into an important administrative centre of the Duchy of Courland and Semigallia between the 16th and 18th centuries. The town structure of Kuldīga has largely retained the street layout of that period, and includes traditional log architecture as well as foreign-influenced styles that illustrate the rich exchange between local and travelling craftspeople from around the Baltic Sea. The architectural influences and craftsmanship traditions introduced during the period of the Duchy endured well into the 19th century.",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1658"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.29306,
+          54.68667
+        ]
+      },
+      "properties": {
+        "name": "Vilnius Historic Centre",
+        "country": "Lithuania",
+        "year": 1994,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "<p>Political centre of the Grand Duchy of Lithuania from the 13th to the end of the 18th century, Vilnius has had a profound influence on the cultural and architectural development of much of eastern Europe. Despite invasions and partial destruction, it has preserved an impressive complex of Gothic, Renaissance, Baroque and classical buildings as well as its medieval layout and natural setting.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/541"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.853,
+          54.879
+        ]
+      },
+      "properties": {
+        "name": "Kernavė Archaeological Site (Cultural Reserve of Kernavė)",
+        "country": "Lithuania",
+        "year": 2004,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(3), (4)",
+        "description": "<p>The Kernavė Archaeological site, about 35 km north-west of Vilnius in eastern Lithuania, represents an exceptional testimony to some 10 millennia of human settlements in this region. Situated in the valley of the River Neris, the site is a complex ensemble of archaeological properties, encompassing the town of Kernavė, forts, some unfortified settlements, burial sites and other archaeological, historical and cultural monuments from the late Palaeolithic Period to the Middle Ages. The site of 194,4 ha has preserved the traces of ancient land-use, as well as remains of five impressive hill forts, part of an exceptionally large defence system. Kernavė was an important feudal town in the Middle Ages. The town was destroyed by the Teutonic Order in the late 14th century, however the site remained in use until modern times.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1137"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.9291666667,
+          54.8969444444
+        ]
+      },
+      "properties": {
+        "name": "Modernist Kaunas: Architecture of Optimism, 1919-1939",
+        "country": "Lithuania",
+        "year": 2023,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(4)",
+        "description": "This property testifies to the rapid urbanization that transformed the provincial town of Kaunas into a modern city that became Lithuania’s provisional capital between the First and Second World Wars. Its community-driven transformation of an urban landscape was adapted from an earlier town layout. The quality of modern Kaunas was manifested through the spatial organization of the Naujamiestis (New Town) and Žaliakalnis (Green Hill) areas, and in public buildings, urban spaces and residences constructed during the interwar period that demonstrate a variety of styles in which the Modern Movement found architectural expression in the city.",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1661"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.31833,
+          59.95
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Saint Petersburg and Related Groups of Monuments",
+        "country": "Russia",
+        "year": 1990,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(1), (2), (4), (6)",
+        "description": "<p>The 'Venice of the North', with its numerous canals and more than 400 bridges, is the result of a vast urban project begun in 1703 under Peter the Great. Later known as Leningrad (in the former USSR), the city is closely associated with the October Revolution. Its architectural heritage reconciles the very different Baroque and pure neoclassical styles, as can be seen in the Admiralty, the Winter Palace, the Marble Palace and the Hermitage.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/540"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2243611111,
+          62.0675833333
+        ]
+      },
+      "properties": {
+        "name": "Kizhi Pogost",
+        "country": "Russia",
+        "year": 1990,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(1), (4), (5)",
+        "description": "<p>The <em>pogost</em> of Kizhi (i.e. the Kizhi enclosure) is located on one of the many islands in Lake Onega, in Karelia. Two 18th-century wooden churches, and an octagonal clock tower, also in wood and built in 1862, can be seen there. These unusual constructions, in which carpenters created a bold visionary architecture, perpetuate an ancient model of parish space and are in harmony with the surrounding landscape.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/544"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6204166667,
+          55.7540277778
+        ]
+      },
+      "properties": {
+        "name": "Kremlin and Red Square, Moscow",
+        "country": "Russia",
+        "year": 1990,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(1), (2), (4), (6)",
+        "description": "<p>Inextricably linked to all the most important historical and political events in Russia since the 13th century, the Kremlin (built between the 14th and 17th centuries by outstanding Russian and foreign architects) was the residence of the Great Prince and also a religious centre. At the foot of its ramparts, on Red Square, St Basil's Basilica is one of the most beautiful Russian Orthodox monuments.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/545"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.28333,
+          58.53333
+        ]
+      },
+      "properties": {
+        "name": "Historic Monuments of Novgorod and Surroundings",
+        "country": "Russia",
+        "year": 1992,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (4), (6)",
+        "description": "<p>Situated on the ancient trade route between Central Asia and northern Europe, Novgorod was Russia's first capital in the 9th century. Surrounded by churches and monasteries, it was a centre for Orthodox spirituality as well as Russian architecture. Its medieval monuments and the 14th-century frescoes of Theophanes the Greek (Andrei Rublev's teacher) illustrate the development of its remarkable architecture and cultural creativity.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/604"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.66666667,
+          65.08333333
+        ]
+      },
+      "properties": {
+        "name": "Cultural and Historic Ensemble of the Solovetsky Islands",
+        "country": "Russia",
+        "year": 1992,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(4)",
+        "description": "<p>The Solovetsky archipelago comprises six islands in the western part of the White Sea, covering about 300 km<sup>2</sup> . They have been inhabited since the 5th century B.C. and important traces of a human presence from as far back as the 5th millennium B.C. can be found there. The archipelago has been the site of fervent monastic activity since the 15th century, and there are several churches dating from the 16th to the 19th century.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/632"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.41666667,
+          56.15
+        ]
+      },
+      "properties": {
+        "name": "White Monuments of Vladimir and Suzdal",
+        "country": "Russia",
+        "year": 1992,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(1), (2), (4)",
+        "description": "<p>These two artistic centres in central Russia hold an important place in the country's architectural history. There are a number of magnificent 12th- and 13th-century public and religious buildings, above all the masterpieces of the Collegiate Church of St Demetrios and the Cathedral of the Assumption of the Virgin.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/633"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.67389,
+          55.65556
+        ]
+      },
+      "properties": {
+        "name": "Church of the Ascension, Kolomenskoye",
+        "country": "Russia",
+        "year": 1994,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2)",
+        "description": "<p>The Church of the Ascension was built in 1532 on the imperial estate of Kolomenskoye, near Moscow, to celebrate the birth of the prince who was to become Tsar Ivan IV ('the Terrible'). One of the earliest examples of a traditional wooden tent-roofed church on a stone and brick substructure, it had a great influence on the development of Russian ecclesiastical architecture.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/634"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.1312,
+          56.31035
+        ]
+      },
+      "properties": {
+        "name": "Architectural Ensemble of the Trinity Sergius Lavra in Sergiev Posad",
+        "country": "Russia",
+        "year": 1993,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "<p>This is a fine example of a working Orthodox monastery, with military features that are typical of the 15th to the 18th century, the period during which it developed. The main church of the Lavra, the Cathedral of the Assumption (echoing the Kremlin Cathedral of the same name), contains the tomb of Boris Godunov. Among the treasures of the Lavra is the famous icon, <em>The Trinity</em> , by Andrei Rublev.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/657"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.9525,
+          63.6258333333
+        ]
+      },
+      "properties": {
+        "name": "Virgin Komi Forests",
+        "country": "Russia",
+        "year": 1995,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(7), (9)",
+        "description": "<p>The Virgin Komi Forests cover 3.28 million ha of tundra and mountain tundra in the Urals, as well as one of the most extensive areas of virgin boreal forest remaining in Europe. This vast area of conifers, aspens, birches, peat bogs, rivers and natural lakes has been monitored and studied for over 50 years. It provides valuable evidence of the natural processes affecting biodiversity in the taiga.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/719"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.6625,
+          53.17361111
+        ]
+      },
+      "properties": {
+        "name": "Lake Baikal",
+        "country": "Russia",
+        "year": 1996,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(7), (8), (9), (10)",
+        "description": "<p>Situated in south-east Siberia, the 3.15-million-ha Lake Baikal is the oldest (25 million years) and deepest (1,700 m) lake in the world. It contains 20% of the world's total unfrozen freshwater reserve. Known as the 'Galapagos of Russia', its age and isolation have produced one of the world's richest and most unusual freshwater faunas, which is of exceptional value to evolutionary science.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/754"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          158.5,
+          56.33333333
+        ]
+      },
+      "properties": {
+        "name": "Volcanoes of Kamchatka",
+        "country": "Russia",
+        "year": 1996,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(7), (8), (9), (10)",
+        "description": "<p>This is one of the most outstanding volcanic regions in the world, with a high density of active volcanoes, a variety of types, and a wide range of related features. The six sites included in the serial designation group together the majority of volcanic features of the Kamchatka peninsula. The interplay of active volcanoes and glaciers forms a dynamic landscape of great beauty. The sites contain great species diversity, including the world's largest known variety of salmonoid fish and exceptional concentrations of sea otter, brown bear and Stellar's sea eagle.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/765"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6611111111,
+          46.6833333333
+        ]
+      },
+      "properties": {
+        "name": "Central Sikhote-Alin",
+        "country": "Russia",
+        "year": 2001,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(10)",
+        "description": "<p>The Sikhote-Alin mountain range contains one of the richest and most unusual temperate forests of the world. In this mixed zone between taiga and subtropics, southern species such as the tiger and Himalayan bear cohabit with northern species such as the brown bear and lynx. After its extension in 2018, the property includes the Bikin River Valley, located about 100 km to the north of the existing site. It encompasses the South-Okhotsk dark coniferous forests and the East-Asian coniferous broadleaf forests. The fauna includes species of the taiga alongside southern Manchurian species. It includes notable mammals such as the Amur Tiger, Siberian Musk Deer, Wolverine and Sable.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/766"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.0,
+          50.46666667
+        ]
+      },
+      "properties": {
+        "name": "Golden Mountains of Altai",
+        "country": "Russia",
+        "year": 1998,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(10)",
+        "description": "<p>The Altai mountains in southern Siberia form the major mountain range in the western Siberia biogeographic region and provide the source of its greatest rivers – the Ob and the Irtysh. Three separate areas are inscribed: Altaisky Zapovednik and a buffer zone around Lake Teletskoye; Katunsky Zapovednik and a buffer zone around Mount Belukha; and the Ukok Quiet Zone on the Ukok plateau. The total area covers 1,611,457 ha. The region represents the most complete sequence of altitudinal vegetation zones in central Siberia, from steppe, forest-steppe, mixed forest, subalpine vegetation to alpine vegetation. The site is also an important habitat for endangered animal species such as the snow leopard.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/768"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.0,
+          44.0
+        ]
+      },
+      "properties": {
+        "name": "Western Caucasus",
+        "country": "Russia",
+        "year": 1999,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(9), (10)",
+        "description": "<p>The Western Caucasus, extending over 275,000 ha of the extreme western end of the Caucasus mountains and located 50 km north-east of the Black Sea, is one of the few large mountain areas of Europe that has not experienced significant human impact. Its subalpine and alpine pastures have only been grazed by wild animals, and its extensive tracts of undisturbed mountain forests, extending from the lowlands to the subalpine zone, are unique in Europe. The site has a great diversity of ecosystems, with important endemic plants and wildlife, and is the place of origin and reintroduction of the mountain subspecies of the European bison.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/900"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1064602384,
+          55.7994526626
+        ]
+      },
+      "properties": {
+        "name": "Historic and Architectural Complex of the Kazan Kremlin",
+        "country": "Russia",
+        "year": 2000,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (3), (4)",
+        "description": "<p>Built on an ancient site, the Kazan Kremlin dates from the Muslim period of the Golden Horde and the Kazan Khanate. It was conquered by Ivan the Terrible in 1552 and became the Christian See of the Volga Land. The only surviving Tatar fortress in Russia and an important place of pilgrimage, the Kazan Kremlin consists of an outstanding group of historic buildings dating from the 16th to 19th centuries, integrating remains of earlier structures of the 10th to 16th centuries.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/980"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0563888889,
+          54.9788888889
+        ]
+      },
+      "properties": {
+        "name": "Bolgar Historical and Archaeological Complex",
+        "country": "Russia",
+        "year": 2014,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (6)",
+        "description": "<p>This property lies on the shores of the Volga River, south of its confluence with the River Kama, and south of the capital of Tatarstan, Kazan. It contains evidence of the medieval city of Bolgar, an early settlement of the civilization of Volga-Bolgars, which existed between the 7th and 15th centuries AD, and was the first capital of the Golden Horde in the 13th century. Bolgar represents the historical cultural exchanges and transformations of Eurasia over several centuries that played a pivotal role in the formation of civilizations, customs and cultural traditions. The property provides remarkable evidence of historic continuity and cultural diversity. It is a symbolic reminder of the acceptance of Islam by the Volga-Bolgars in AD 922 and remains a sacred pilgrimage destination to the Tatar Muslims.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.56666667,
+          59.95
+        ]
+      },
+      "properties": {
+        "name": "Ensemble of the Ferapontov Monastery",
+        "country": "Russia",
+        "year": 2000,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(1), (4)",
+        "description": "<p>The Ferapontov Monastery, in the Vologda region in northern Russia, is an exceptionally well-preserved and complete example of a Russian Orthodox monastic complex of the 15th-17th centuries, a period of great significance in the development of the unified Russian state and its culture. The architecture of the monastery is outstanding in its inventiveness and purity. The interior is graced by the magnificent wall paintings of Dionisy, the greatest Russian artist of the end of the 15th century.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/982"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -179.7152778,
+          71.18888889
+        ]
+      },
+      "properties": {
+        "name": "Natural System of Wrangel Island Reserve",
+        "country": "Russia",
+        "year": 2004,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(9), (10)",
+        "description": "<p>Located well above the Arctic Circle, the site includes the mountainous Wrangel Island (7,608 km2), Herald Island (11 km<sup>2</sup>) and surrounding waters. Wrangel was not glaciated during the Quaternary Ice Age, resulting in exceptionally high levels of biodiversity for this region. The island boasts the world’s largest population of Pacific walrus and the highest density of ancestral polar bear dens. It is a major feeding ground for the grey whale migrating from Mexico and the northernmost nesting ground for 100 migratory bird species, many endangered. Currently, 417 species and subspecies of vascular plants have been identified on the island, double that of any other Arctic tundra territory of comparable size and more than any other Arctic island. Some species are derivative of widespread continental forms, others are the result of recent hybridization, and 23 are endemic.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1023"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2827777778,
+          42.0558333333
+        ]
+      },
+      "properties": {
+        "name": "Citadel, Ancient City and Fortress Buildings of Derbent",
+        "country": "Russia",
+        "year": 2003,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(3), (4)",
+        "description": "<p>The Citadel, Ancient City and Fortress Buildings of Derbent were part of the northern lines of the Sasanian Persian Empire, which extended east and west of the Caspian Sea. The fortification was built in stone. It consisted of two parallel walls that formed a barrier from the seashore up to the mountain. The town of Derbent was built between these two walls, and has retained part of its medieval fabric. The site continued to be of great strategic importance until the 19th century.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1070"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.55508333,
+          55.72611111
+        ]
+      },
+      "properties": {
+        "name": "Ensemble of the Novodevichy Convent",
+        "country": "Russia",
+        "year": 2004,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(1), (4), (6)",
+        "description": "<p>The Novodevichy Convent, in south-western Moscow, built in the 16th and 17th centuries in the so-called Moscow Baroque style, was part of a chain of monastic ensembles that were integrated into the defence system of the city. The convent was directly associated with the political, cultural and religious history of Russia, and closely linked to the Moscow Kremlin. It was used by women of the Tsar&rsquo;s family and the aristocracy. Members of the Tsar&rsquo;s family and entourage were also buried in its cemetery. The convent provides an example of the highest accomplishments of Russian architecture with rich interiors and an important collection of paintings and artefacts.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1097"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.87611,
+          57.65278
+        ]
+      },
+      "properties": {
+        "name": "Historical Centre of the City of Yaroslavl",
+        "country": "Russia",
+        "year": 2005,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "<p>Situated at the confluence of the Volga and Kotorosl Rivers some 250 km north-east of Moscow, the historic city of Yaroslavl developed into a major commercial centre from the 11th century. It is renowned for its numerous 17th-century churches and is an outstanding example of the urban planning reform Empress Catherine the Great ordered for the whole of Russia in 1763. While keeping some of its significant historic structures, the town was renovated in the neoclassical style on a radial urban master plan. It has also kept elements from the 16th century in the Spassky Monastery, one of the oldest in the Upper Volga region, built on the site of a pagan temple in the late 12th century but reconstructed over time.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1170"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.1580555556,
+          69.0469444444
+        ]
+      },
+      "properties": {
+        "name": "Putorana Plateau",
+        "country": "Russia",
+        "year": 2010,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(7), (9)",
+        "description": "<p>This site coincides with the area of the Putoransky State Nature Reserve, and is located in the central part of the Putorana Plateau in northern Central Siberia. It is situated about 100 km north of the Arctic Circle. The part of the plateau inscribed on the World Heritage List harbours a complete set of subarctic and arctic ecosystems in an isolated mountain range, including pristine taiga, forest tundra, tundra and arctic desert systems, as well as untouched cold-water lake and river systems. A major reindeer migration route crosses the property, which represents an exceptional, large-scale and increasingly rare natural phenomenon.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1234"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.0,
+          60.6666666667
+        ]
+      },
+      "properties": {
+        "name": "Lena Pillars Nature Park",
+        "country": "Russia",
+        "year": 2012,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(8)",
+        "description": "<p>Lena Pillars Nature Park is marked by spectacular rock pillars that reach a height of approximately 100 m along the banks of the Lena River in the central part of the Sakha Republic (Yakutia). They were produced by the region’s extreme continental climate with an annual temperature range of almost 100 degrees Celsius (from –60 °C in winter to +40 °C in summer). The pillars form rocky buttresses isolated from each other by deep and steep gullies developed by frost shattering directed along intervening joints. Penetration of water from the surface has facilitated cryogenic processes (freeze-thaw action), which have widened gullies between pillars leading to their isolation. Fluvial processes are also critical to the pillars. The site also contains a wealth of Cambrian fossil remains of numerous species, some of them unique.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1299"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.3285555556,
+          57.8071944444
+        ]
+      },
+      "properties": {
+        "name": "Churches of the Pskov School of Architecture",
+        "country": "Russia",
+        "year": 2019,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2)",
+        "description": "This group of monuments is located in the historic city of Pskov, on the banks of the Velikaya River in the northwest of Russia. Characteristics of these buildings, produced by the Pskov School of Architecture, include cubic volumes, domes, porches and belfries, with the oldest elements dating back to the 12th century. Churches and cathedrals are integrated into the natural environment through gardens, perimeter walls and fences. Inspired by the Byzantine and Novgorod traditions, the Pskov School of Architecture reached its peak in the 15th and 16th centuries, and was one of the foremost schools in the country. It informed the evolution of Russian architecture over five centuries.",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1523"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.6527777778,
+          55.7702777778
+        ]
+      },
+      "properties": {
+        "name": "Assumption Cathedral and Monastery of the town-island of Sviyazhsk",
+        "country": "Russia",
+        "year": 2017,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "<p>The Assumption Cathedral is located in the town-island of Sviyazhsk and is part of the monastery of the same name. Situated at the confluence of the Volga, the Sviyaga and the Shchuka rivers, at the crossroads of the Silk and Volga routes, Sviyazhsk was founded by Ivan the Terrible in 1551. It was from this outpost that he initiated the conquest of the Kazan Khanate. The Assumption Monastery illustrates in its location and architectural composition the political and missionary programme developed by Tsar Ivan IV to extend the Moscow state. The cathedral’s frescoes are among the rarest examples of Eastern Orthodox mural paintings.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1525"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.0126388889,
+          61.7299
+        ]
+      },
+      "properties": {
+        "name": "Petroglyphs of Lake Onega and the White Sea",
+        "country": "Russia",
+        "year": 2021,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(3)",
+        "description": "<p>The site contains 4,500 petroglyphs carved in the rocks during the Neolithic period dated about 6-7 thousand years ago and located in the Republic of Karelia in the Russian Federation. It is one of the largest such sites in Europe with petroglyphs that document Neolithic culture in Fennoscandia. The serial property encompasses 33 rock art panels in two component parts 300km apart: 22 petroglyph groups at Lake Onega in the District of Pudozhsky featuring a total of over 1,200 figures and 3,411 figures in 11 groups by the White Sea in the District of Belomorsky. The rock art figures at Lake Onega mostly represents birds, animals, half human and half animal figures as well as geometric shapes that may be symbols of the moon and the sun. The petroglyphs of the White Sea are mostly composed of carvings depicting hunting and sailing scenes including their related equipment as well as animal and human footprints. They show significant artistic qualities and testify to the creativity of the Stone Age. The petroglyphs are associated with sites including settlements and burial grounds.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1654"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1190972222,
+          55.7909083333
+        ]
+      },
+      "properties": {
+        "name": "Astronomical Observatories of Kazan Federal University",
+        "country": "Russia",
+        "year": 2023,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "The property is comprised of two component parts: one in the historical centre of Kazan and the other in a forested suburban area west of the city. The Kazan City Astronomical Observatory, built in 1837, is located on the University campus and the building is characterized by a semi-circular façade and three towers with domes built to house astronomical instruments. The suburban Engelhardt Astronomical Observatory includes structures for sky observations and residential buildings, all located within a park. The observatories have been preserved complete with astronomical instruments and today perform mainly educational functions.",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1678"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.1726111111,
+          61.928
+        ]
+      },
+      "properties": {
+        "name": "Cultural Landscape of Kenozero Lake",
+        "country": "Russia",
+        "year": 2024,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(3)",
+        "description": "<p>Located in Kenozero National Park in the north-western area of the European region of the Russian Federation, the property depicts the local cultural landscape that evolved here from the 12th century, following the gradual spread of the Slavic population. It incorporates a number of traditional rural settlements with vernacular wooden architecture. The cultural landscape of Kenozero reflects the communal management of agriculture and nature that developed through the fusion and interaction of the Finno-Ugric forest culture and the Slavic field culture. Wooden churches and other religious buildings, originally decorated with painted ceilings, or “heavens”, are the key social, cultural, and visual landmarks of the area. Their spatial organization, together with sacred sites and symbols, highlight the residents’ spiritual connection with this environment.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1688"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.0720277778,
+          53.0494444444
+        ]
+      },
+      "properties": {
+        "name": "Rock Paintings of Shulgan-Tash Cave",
+        "country": "Russia",
+        "year": 2025,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(3)",
+        "description": "<p>Located in the Southern Ural Mountains of Bashkortostan, the Shulgan-Tash Cave contains extensive Late Palaeolithic rock art. Set within a karst massif near the Belaya and Shulgan Rivers, it features large halls and deep chambers across two levels. The paintings depict steppe fauna—mammoths, woolly rhinoceroses, bison, horses, and a Bactrian camel—alongside anthropomorphic figures, abstract signs, and geometric motifs like the “Kapova trapezoids.” Archaeological finds offer insights into the artistic process and domestic life of its prehistoric inhabitants.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1743"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.4587222222,
+          39.5078888889
+        ]
+      },
+      "properties": {
+        "name": "Proto-urban Site of Sarazm",
+        "country": "Tajikistan",
+        "year": 2010,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (3)",
+        "description": "<p>Sarazm, which means “where the land begins”, is an archaeological site bearing testimony to the development of human settlements in Central Asia, from the 4th millennium BCE to the end of the 3rd millennium BCE. The ruins demonstrate the early development of proto-urbanization in this region. This centre of settlement, one of the oldest in Central Asia, is situated between a mountainous region suitable for cattle rearing by nomadic pastoralists, and a large valley conducive to the development of agriculture and irrigation by the first settled populations in the region. Sarazm also demonstrates the existence of commercial and cultural exchanges and trade relations with peoples over an extensive geographical area, extending from the steppes of Central Asia and Turkmenistan, to the Iranian plateau, the Indus valley and as far as the Indian Ocean.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1141"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.3052777778,
+          38.765
+        ]
+      },
+      "properties": {
+        "name": "Tajik National Park (Mountains of the Pamirs)",
+        "country": "Tajikistan",
+        "year": 2013,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(7), (8)",
+        "description": "<p>Tajikistan National Park covers more than 2.5 million hectares in the east of the country, at the centre of the so-called “Pamir Knot”, a meeting point of the highest mountain ranges on the Eurasian continent. It consists of high plateaux in the east and, to the west, rugged peaks, some of them over 7,000 meters high, and features extreme seasonal variations of temperature. The longest valley glacier outside the Polar region is located among the 1,085 glaciers inventoried in the site, which also numbers 170 rivers and more than 400 lakes. Rich flora species of both the south-western and central Asian floristic regions grow in the Park which shelters nationally rare and threatened birds and mammals (Marco Polo Argali sheep, Snow Leopards and Siberian Ibex and more). Subject to frequent strong earthquakes, the Park is sparsely inhabited, and virtually unaffected by agriculture and permanent human settlements. It offers a unique opportunity for the study of plate tectonics and subduction phenomena.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1252"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.2987127778,
+          37.7443936111
+        ]
+      },
+      "properties": {
+        "name": "Cultural Heritage Sites of Ancient Khuttal",
+        "country": "Tajikistan",
+        "year": 2025,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (3)",
+        "description": "<p>Ancient Khuttal was a medieval kingdom located between the Panj and Vakhsh Rivers and the Pamir piedmonts. The property includes ten sites and one monument reflecting its role from the 7th to 16th centuries in Silk Roads trade. Khuttal contributed valuable goods like salt, gold, silver, and horses, and served as a hub for cultural, religious, and technological exchanges. Its diverse archaeological remains—Buddhist temples, palaces, settlements, manufacturing centres, and caravanserais—illustrate its strategic importance and vibrant interactions with neighbouring empires.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1627"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.3413888889,
+          37.2047222222
+        ]
+      },
+      "properties": {
+        "name": "Tugay forests of the Tigrovaya Balka Nature Reserve",
+        "country": "Tajikistan",
+        "year": 2023,
+        "type": "Monument",
+        "category": "N",
+        "criteria": "(9)",
+        "description": "This property is located between the Vakhsh and Panj rivers in southwestern Tajikistan. The Reserve includes extensive riparian tugay ecosystems, the sandy Kashka-Kum desert, the Buritau peak, as well as the Hodja-Kaziyon mountains. The property is composed of a series of floodplain terraces covered by alluvial soils, comprising tugay riverine forests with very specific biodiversity in the valley. The tugay forests in the reserve represent the largest and most intact tugay forest of this type in Central Asia, and this is the only place in the world where the Asiatic poplar tugay ecosystem has been preserved in its original state over an area of this size.",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1685"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.1775,
+          37.70083
+        ]
+      },
+      "properties": {
+        "name": "State Historical and Cultural Park “Ancient Merv”",
+        "country": "Turkmenistan",
+        "year": 1999,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (3)",
+        "description": "<p>Merv is the oldest and best-preserved of the oasis-cities along the Silk Route in Central Asia. The remains in this vast oasis span 4,000 years of human history. A number of monuments are still visible, particularly from the last two millennia.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/886"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.08494,
+          42.18318
+        ]
+      },
+      "properties": {
+        "name": "Kunya-Urgench",
+        "country": "Turkmenistan",
+        "year": 2005,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (3)",
+        "description": "<p>Kunya-Urgench is situated in north-western Turkmenistan, on the left bank of the Amu Daria River. Urgench was the capital of the Khorezm region, part of the Achaemenid Empire. The old town contains a series of monuments mainly from the 11th to 16th centuries, including a mosque, the gates of a caravanserai, fortresses, mausoleums and a 60-m high minaret. The monuments testify to outstanding achievements in architecture and craftsmanship whose influence reached Iran and Afghanistan, and later the architecture of the Mogul Empire of 16th-century India.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1199"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.1986111111,
+          37.9997222222
+        ]
+      },
+      "properties": {
+        "name": "Parthian Fortresses of Nisa",
+        "country": "Turkmenistan",
+        "year": 2007,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (3)",
+        "description": "<p>The Parthian Fortresses of Nisa consist of two tells of Old and New Nisa, indicating the site of one of the earliest and most important cities of the Parthian Empire, a major power from the mid 3rd century BC to the 3rd century AD. They conserve the unexcavated remains of an ancient civilization which skilfully combined its own traditional cultural elements with those of the Hellenistic and Roman west. Archaeological excavations in two parts of the site have revealed richly decorated architecture, illustrative of domestic, state and religious functions. Situated at the crossroads of important commercial and strategic axes, this powerful empire formed a barrier to Roman expansion while serving as an important communication and trading centre between east and west, north and south.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1242"
       }
     },
     {
@@ -256,13 +1371,14 @@
         "name": "Kyiv: Saint-Sophia Cathedral and Related Monastic Buildings, Kyiv-Pechersk Lavra",
         "country": "Ukraine",
         "year": 1990,
-        "type": "Cultural",
-        "criteria": "i, ii, iii, iv",
-        "religious": "Yes",
-        "transboundary": "No",
-        "description": "Designed to rival Hagia Sophia in Constantinople, Kyiv's Saint-Sophia Cathedral symbolizes the 'new Constantinople', capital of the Christian principality of Kyiv, which was created in the 11th century in a region evangelized after the baptism of St Vladimir in 988. The spiritual and intellectual influence of Kyiv-Pechersk Lavra contributed to the spread of Orthodox thought and the Orthodox faith in the Russian world from the 17th to the 19th century.",
-        "unesco_link": "https://whc.unesco.org/en/list/527",
-        "notes": "Major Orthodox cathedral and monastery"
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(1), (2), (3), (4)",
+        "description": "<p>Designed to rival Hagia Sophia in Constantinople, Kyiv's Saint-Sophia Cathedral symbolizes the 'new Constantinople', capital of the Christian principality of Kyiv, which was created in the 11th century in a region evangelized after the baptism of St Vladimir in 988. The spiritual and intellectual influence of Kyiv-Pechersk Lavra contributed to the spread of Orthodox thought and the Orthodox faith in the Russian world from the 17th to the 19th century.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/527"
       }
     },
     {
@@ -278,13 +1394,14 @@
         "name": "L'viv – the Ensemble of the Historic Centre",
         "country": "Ukraine",
         "year": 1998,
-        "type": "Cultural",
-        "criteria": "ii, v",
-        "religious": "Partially",
-        "transboundary": "No",
-        "description": "The city of L''viv, founded in the late Middle Ages, was a flourishing administrative, religious and commercial centre for several centuries. The medieval urban topography has been preserved virtually intact (in particular, there is evidence of the different ethnic communities who lived there), along with many fine Baroque and later buildings.",
-        "unesco_link": "https://whc.unesco.org/en/list/865",
-        "notes": "Historic city with multiple churches"
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (5)",
+        "description": "<p>The city of L''viv, founded in the late Middle Ages, was a flourishing administrative, religious and commercial centre for several centuries. The medieval urban topography has been preserved virtually intact (in particular, there is evidence of the different ethnic communities who lived there), along with many fine Baroque and later buildings.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/865"
       }
     },
     {
@@ -292,21 +1409,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          25.92472222,
-          48.29666667
+          25.9247222222,
+          48.2966666667
         ]
       },
       "properties": {
         "name": "Residence of Bukovinian and Dalmatian Metropolitans",
         "country": "Ukraine",
         "year": 2011,
-        "type": "Cultural",
-        "criteria": "ii, iii, iv",
-        "religious": "Yes",
-        "transboundary": "No",
-        "description": "The Residence of Bukovinian and Dalmatian Metropolitans represents a masterful synergy of architectural styles built by Czech architect Josef Hlavka from 1864 to 1882. The property, an outstanding example of 19th-century historicist architecture, also includes a seminary and monastery and is dominated by the domed, cruciform Seminary Church with a garden and park. The complex expresses architectural and cultural influences from the Byzantine period onward and embodies the powerful presence of the Orthodox Church during Habsburg rule, reflecting the Austro-Hungarian Empire policy of religious tolerance.",
-        "unesco_link": "https://whc.unesco.org/en/list/1330",
-        "notes": "Orthodox Metropolitan residence"
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(2), (3), (4)",
+        "description": "<p>The Residence of Bukovinian and Dalmatian Metropolitans represents a masterful synergy of architectural styles built by Czech architect Josef Hlavka from 1864 to 1882. The property, an outstanding example of 19th-century historicist architecture, also includes a seminary and monastery and is dominated by the domed, cruciform Seminary Church with a garden and park. The complex expresses architectural and cultural influences from the Byzantine period onward and embodies the powerful presence of the Orthodox Church during Habsburg rule, reflecting the Austro-Hungarian Empire policy of religious tolerance.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1330"
       }
     },
     {
@@ -314,21 +1432,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          33.49138889,
-          44.61083333
+          33.4913888889,
+          44.6108333333
         ]
       },
       "properties": {
         "name": "Ancient City of Tauric Chersonese and its Chora",
         "country": "Ukraine",
         "year": 2013,
-        "type": "Cultural",
-        "criteria": "ii, v",
-        "religious": "Partially",
-        "transboundary": "No",
-        "description": "The site features the remains of a city founded by Dorian Greeks in the 5th century BC on the northern shores of the Black Sea. It encompasses six component sites with urban remains and agricultural lands divided into several hundreds of chora, rectangular plots of equal size. The plots supported vineyards whose production was exported by the city which thrived until the 15th century. The site features several public building complexes and residential neighbourhoods, as well as early Christian monuments alongside remains from Stone and Bronze Age settlements; Roman and medieval tower fortifications and water supply systems; and exceptionally well-preserved examples of vineyard planting and dividing walls. In the 3rd century AD, the site was known as the most productive wine centre of the Black Sea and remained a hub of exchange between the Greek, Roman and Byzantine Empires and populations north of the Black Sea. It is an outstanding example of democratic land organization linked to an ancient polis, reflecting the city’s social organization.",
-        "unesco_link": "https://whc.unesco.org/en/list/1411",
-        "notes": "Ancient Greek colony with Byzantine remains"
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (5)",
+        "description": "<p>The site features the remains of a city founded by Dorian Greeks in the 5th century BC on the northern shores of the Black Sea. It encompasses six component sites with urban remains and agricultural lands divided into several hundreds of chora, rectangular plots of equal size. The plots supported vineyards whose production was exported by the city which thrived until the 15th century. The site features several public building complexes and residential neighbourhoods, as well as early Christian monuments alongside remains from Stone and Bronze Age settlements; Roman and medieval tower fortifications and water supply systems; and exceptionally well-preserved examples of vineyard planting and dividing walls. In the 3rd century AD, the site was known as the most productive wine centre of the Black Sea and remained a hub of exchange between the Greek, Roman and Byzantine Empires and populations north of the Black Sea. It is an outstanding example of democratic land organization linked to an ancient polis, reflecting the city’s social organization.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1411"
       }
     },
     {
@@ -336,7 +1455,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.74161389,
+          30.7416138889,
           46.48645
         ]
       },
@@ -344,13 +1463,14 @@
         "name": "The Historic Centre of Odesa",
         "country": "Ukraine",
         "year": 2023,
-        "type": "Cultural",
-        "criteria": "ii, iv",
-        "religious": "No",
-        "transboundary": "No",
-        "description": "The Historic Center of Odesa, part of the Black Sea port city developed on the site of Khadzhybei, is a densely built-up area, planned according to classicism canons, characterized by two- to four-storey buildings and wide perpendicular streets lined with trees. Historic buildings reflect the rapid economic development of the city in the 19th and early 20th centuries. The site includes theatres, bridges, monuments, religious buildings, schools, private palaces and tenement houses, clubs, hotels, banks, shopping centres, warehouses, stock exchanges and other public and administrative buildings designed by architects and engineers, mostly from Italy in the early years, but also of other nationalities. Eclecticism is the dominant feature of the historic city centre’s architecture. The site bears witness to the city’s highly diverse ethnic and religious communities, representing an outstanding example of intercultural exchanges and the growth of multicultural and multi-ethnic Eastern European cities of the 19th century.",
-        "unesco_link": "https://whc.unesco.org/en/list/1703",
-        "notes": "Port city historic center"
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (4)",
+        "description": "<p>The Historic Center of Odesa, part of the Black Sea port city developed on the site of Khadzhybei, is a densely built-up area, planned according to classicism canons, characterized by two- to four-storey buildings and wide perpendicular streets lined with trees. Historic buildings reflect the rapid economic development of the city in the 19th and early 20th centuries. The site includes theatres, bridges, monuments, religious buildings, schools, private palaces and tenement houses, clubs, hotels, banks, shopping centres, warehouses, stock exchanges and other public and administrative buildings designed by architects and engineers, mostly from Italy in the early years, but also of other nationalities. Eclecticism is the dominant feature of the historic city centre’s architecture. The site bears witness to the city’s highly diverse ethnic and religious communities, representing an outstanding example of intercultural exchanges and the growth of multicultural and multi-ethnic Eastern European cities of the 19th century.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1703"
       }
     },
     {
@@ -358,21 +1478,114 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.18333333,
+          60.360253,
+          41.378088
+        ]
+      },
+      "properties": {
+        "name": "Itchan Kala",
+        "country": "Uzbekistan",
+        "year": 1990,
+        "type": "Monument",
+        "category": "C",
+        "criteria": "(3), (4), (5)",
+        "description": "<p>Itchan Kala is the inner town (protected by brick walls some 10 m high) of the old Khiva oasis, which was the last resting-place of caravans before crossing the desert to Iran. Although few very old monuments still remain, it is a coherent and well-preserved example of the Muslim architecture of Central Asia. There are several outstanding structures such as the Djuma Mosque, the mausoleums and the madrasas and the two magnificent palaces built at the beginning of the 19th century by Alla-Kulli-Khan.</p>",
+        "transboundary": false,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/543"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.42861,
+          39.77472
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Bukhara",
+        "country": "Uzbekistan",
+        "year": 1993,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(2), (4), (6)",
+        "description": "<p>Bukhara, which is situated on the Silk Route, is more than 2,000 years old. It is the most complete example of a medieval city in Central Asia, with an urban fabric that has remained largely intact. Monuments of particular interest include the famous tomb of Ismail Samani, a masterpiece of 10th-century Muslim architecture, and a large number of 17th-century madrasas.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/602"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.0,
+          39.66861
+        ]
+      },
+      "properties": {
+        "name": "Samarkand – Crossroad of Cultures",
+        "country": "Uzbekistan",
+        "year": 2001,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(1), (2), (4)",
+        "description": "<p>The historic town of Samarkand is a crossroad and melting pot of the world's cultures. Founded in the 7th century B.C. as ancient Afrasiab, Samarkand had its most significant development in the Timurid period from the 14th to the 15th centuries. The major monuments include the Registan Mosque and madrasas, Bibi-Khanum Mosque, the Shakhi-Zinda compound and the Gur-Emir ensemble, as well as Ulugh-Beg's Observatory.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/603"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.83333,
+          39.05
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Shakhrisyabz",
+        "country": "Uzbekistan",
+        "year": 2000,
+        "type": "Ensemble",
+        "category": "C",
+        "criteria": "(3), (4)",
+        "description": "<p>The historic centre of Shakhrisyabz contains a collection of exceptional monuments and ancient quarters which bear witness to the city's secular development, and particularly to the period of its apogee, under the rule of Amir Temur and the Temurids, in the 15th-16th century.</p>",
+        "transboundary": false,
+        "ensemble": true,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/885"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1833333333,
           48.9
         ]
       },
       "properties": {
         "name": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
-        "country": "Ukraine",
+        "country": "Albania,Austria,Belgium,Bosnia and Herzegovina,Bulgaria,Croatia,Czechia,France,Germany,Italy,North Macedonia,Poland,Romania,Slovakia,Slovenia,Spain,Switzerland,Ukraine",
         "year": 2007,
-        "type": "Natural",
-        "criteria": "ix",
-        "religious": "No",
-        "transboundary": "Yes",
-        "description": "This transnational property includes 93 component parts in 18 countries. Since the end of the last Ice Age, European Beech spread from a few isolated refuge areas in the Alps, Carpathians, Dinarides, Mediterranean and Pyrenees over a short period of a few thousand years in a process that is still ongoing. The successful expansion across a whole continent is related to the tree’s adaptability and tolerance of different climatic, geographical and physical conditions.",
-        "unesco_link": "https://whc.unesco.org/en/list/1133",
-        "notes": "Natural forest ecosystem"
+        "type": "Transnational",
+        "category": "N",
+        "criteria": "(9)",
+        "description": "<p>This transnational property includes 93 component parts in 18 countries. Since the end of the last Ice Age, European Beech spread from a few isolated refuge areas in the Alps, Carpathians, Dinarides, Mediterranean and Pyrenees over a short period of a few thousand years in a process that is still ongoing. The successful expansion across a whole continent is related to the tree’s adaptability and tolerance of different climatic, geographical and physical conditions.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1133"
       }
     },
     {
@@ -380,21 +1593,45 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.33777778,
-          59.05777778
+          55.7242777778,
+          37.4214722222
+        ]
+      },
+      "properties": {
+        "name": "Hyrcanian Forests",
+        "country": "Azerbaijan,Iran (Islamic Republic of)",
+        "year": 2019,
+        "type": "Transnational",
+        "category": "N",
+        "criteria": "(9)",
+        "description": "<p>The Hyrcanian Forests form a unique forested massif that stretches along the Caspian Sea in Azerbaijan and Iran. The history of these broad-leaved forests dates back 25 to 50 million years, when they covered most of this Northern Temperate region. Their floristic biodiversity is remarkable with over 3,200 vascular plant species documented. To date, 180 species of birds typical of broad-leaved temperate forests and 58 mammal species have been recorded. Elements of the property comprise full ecosystems including top predators such as leopard, wolf and brown bear, and the forest has a high degree of rare and endemic tree species. The oldest trees seen here are 300-400 years old, with some possibly up to 500 years old.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Asia and the Pacific,Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1584"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.3377777777,
+          59.0577777778
         ]
       },
       "properties": {
         "name": "Struve Geodetic Arc",
-        "country": "Ukraine",
+        "country": "Russia",
         "year": 2005,
-        "type": "Cultural",
-        "criteria": "ii, iv, vi",
-        "religious": "No",
-        "transboundary": "Yes",
-        "description": "The Struve Arc is a chain of survey triangulations stretching from Hammerfest in Norway to the Black Sea, through 10 countries and over 2,820 km. These are points of a survey, carried out between 1816 and 1855 by the astronomer Friedrich Georg Wilhelm Struve, which represented the first accurate measuring of a long segment of a meridian. This helped to establish the exact size and shape of the planet and marked an important step in the development of earth sciences and topographic mapping. It is an extraordinary example of scientific collaboration among scientists from different countries, and of collaboration between monarchs for a scientific cause. The original arc consisted of 258 main triangles with 265 main station points. The listed site includes 34 of the original station points, with different markings, i.e. a drilled hole in rock, iron cross, cairns, or built obelisks.",
-        "unesco_link": "https://whc.unesco.org/en/list/1187",
-        "notes": "Historic geodetic survey points"
+        "type": "Transnational",
+        "category": "C",
+        "criteria": "(2), (4), (6)",
+        "description": "<p>The Struve Arc is a chain of survey triangulations stretching from Hammerfest in Norway to the Black Sea, through 10 countries and over 2,820 km. These are points of a survey, carried out between 1816 and 1855 by the astronomer Friedrich Georg Wilhelm Struve, which represented the first accurate measuring of a long segment of a meridian. This helped to establish the exact size and shape of the planet and marked an important step in the development of earth sciences and topographic mapping. It is an extraordinary example of scientific collaboration among scientists from different countries, and of collaboration between monarchs for a scientific cause. The original arc consisted of 258 main triangles with 265 main station points. The listed site includes 34 of the original station points, with different markings, i.e. a drilled hole in rock, iron cross, cairns, or built obelisks.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1187"
       }
     },
     {
@@ -402,21 +1639,206 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.03222222,
-          49.53388889
+          23.9811111111,
+          52.7275
         ]
       },
       "properties": {
-        "name": "Wooden Tserkvas of the Carpathian Region in Poland and Ukraine",
-        "country": "Ukraine",
+        "name": "Białowieża Forest",
+        "country": "Belarus,Poland",
+        "year": 1979,
+        "type": "Transnational",
+        "category": "N",
+        "criteria": "(9), (10)",
+        "description": "<p>The Białowieża Forest World Heritage site, on the border between Poland and Belarus, is an immense range of primary forest including both conifers and broadleaved trees covering a total area of 141,885 hectares. Situated on the watershed of the Baltic Sea and Black Sea, this transboundary property is exceptional for the opportunities it offers for biodiversity conservation. It is home to the largest population of the property’s iconic species, the European bison.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.8572222222,
+          34.3044444444
+        ]
+      },
+      "properties": {
+        "name": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor",
+        "country": "China,Kazakhstan,Kyrgyzstan",
+        "year": 2014,
+        "type": "Transnational",
+        "category": "C",
+        "criteria": "(2), (3), (5), (6)",
+        "description": "<p>This property is a 5,000 km section of the extensive Silk Roads network, stretching from Chang’an/Luoyang, the central capital of China in the Han and Tang dynasties, to the Zhetysu region of Central Asia. It took shape between the 2nd century BC and 1st century AD and remained in use until the 16th century, linking multiple civilizations and facilitating far-reaching exchanges of activities in trade, religious beliefs, scientific knowledge, technological innovation, cultural practices and the arts. The thirty-three components included in the routes network include capital cities and palace complexes of various empires and Khan kingdoms, trading settlements, Buddhist cave temples, ancient paths, posthouses, passes, beacon towers, sections of The Great Wall, fortifications, tombs and religious buildings.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1442"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.6788888889,
+          43.7183333333
+        ]
+      },
+      "properties": {
+        "name": "Western Tien-Shan",
+        "country": "Kazakhstan,Kyrgyzstan,Uzbekistan",
+        "year": 2016,
+        "type": "Transnational",
+        "category": "N",
+        "criteria": "(10)",
+        "description": "<p>The transnational property is located in the Tien-Shan mountain system, one of the largest mountain ranges in the world. Western Tien-Shan ranges in altitude from 700 to 4,503 m. It features diverse landscapes, which are home to exceptionally rich biodiversity. It is of global importance as a centre of origin for a number of cultivated fruit crops and is home to a great diversity of forest types and unique plant community associations. </p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1490"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.0341666667,
+          44.0258333333
+        ]
+      },
+      "properties": {
+        "name": "Cold Winter Deserts of Turan",
+        "country": "Kazakhstan,Turkmenistan,Uzbekistan",
+        "year": 2023,
+        "type": "Transnational",
+        "category": "N",
+        "criteria": "(9), (10)",
+        "description": "This transnational property comprises fourteen component parts found across arid areas of Central Asia’s temperate zone between the Caspian Sea and the Turanian high mountains. The area is subject to extreme climatic conditions with very cold winters and hot summers, and boasts an exceptionally diverse flora and fauna that has adapted to the harsh conditions. The property also represents a considerable diversity of desert ecosystems, spanning a distance of more than 1,500 kilometres from East to West. Each of the component parts complements the others in terms of biodiversity, desert types, and ongoing ecological processes.",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1693"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.96239,
+          55.27458
+        ]
+      },
+      "properties": {
+        "name": "Curonian Spit",
+        "country": "Russia",
+        "year": 2000,
+        "type": "Transnational",
+        "category": "C",
+        "criteria": "(5)",
+        "description": "<p>Human habitation of this elongated sand dune peninsula, 98 km long and 0.4-4 km wide, dates back to prehistoric times. Throughout this period it has been threatened by the natural forces of wind and waves. Its survival to the present day has been made possible only as a result of ceaseless human efforts to combat the erosion of the Spit, dramatically illustrated by continuing stabilisation and reforestation projects.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/994"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.71972222,
+          50.275
+        ]
+      },
+      "properties": {
+        "name": "Uvs Nuur Basin",
+        "country": "Russia",
+        "year": 2003,
+        "type": "Transnational",
+        "category": "N",
+        "criteria": "(9), (10)",
+        "description": "<p>The Uvs Nuur Basin (1,068,853 ha), is the northernmost of the enclosed basins of Central Asia. It takes its name from Uvs Nuur Lake, a large, shallow and very saline lake, important for migrating birds, waterfowl and seabirds. The site is made up of twelve protected areas representing the major biomes of eastern Eurasia. The steppe ecosystem supports a rich diversity of birds and the desert is home to a number of rare gerbil, jerboas and the marbled polecat. The mountains are an important refuge for the globally endangered snow leopard, mountain sheep (argali) and the Asiatic ibex.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Asia and the Pacific,Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/769"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.4254444444,
+          49.9302222222
+        ]
+      },
+      "properties": {
+        "name": "Landscapes of Dauria",
+        "country": "Russia",
+        "year": 2017,
+        "type": "Transnational",
+        "category": "N",
+        "criteria": "(9), (10)",
+        "description": "<p>Shared between Mongolia and the Russian Federation, this site is an outstanding example of the Daurian Steppe eco-region, which extends from eastern Mongolia into Russian Siberia and northeastern China. Cyclical climate changes, with distinct dry and wet periods lead to a wide diversity of species and ecosystems of global significance. The different types of steppe ecosystems represented, such as grassland and forest, as well as lakes and wetlands serve as habitats for rare species of fauna, such as the White-naped crane, Great Bustard, Relict Gull and Swan goose, as well as millions of vulnerable, endangered or threatened migratory birds. It is also a critical site on the transboundary migration path for the Mongolian gazelle.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Asia and the Pacific,Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1448"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0322222222,
+          49.5338888889
+        ]
+      },
+      "properties": {
+        "name": "Wooden <em>Tserkvas</em> of the Carpathian Region in Poland and Ukraine",
+        "country": "Poland,Ukraine",
         "year": 2013,
-        "type": "Cultural",
-        "criteria": "iii, iv",
-        "religious": "Yes",
-        "transboundary": "Yes",
-        "description": "Situated in the eastern fringe of Central Europe, the transnational property numbers a selection of sixteen tserkvas (churches). They were built of horizontal wooden logs between the 16-19th centuries by communities of Orthodox and Greek Catholic faiths. The tserkvas bear testimony to a distinct building tradition rooted in Orthodox ecclesiastic design interwoven with elements of local tradition, and symbolic references to their communities. The tservkas are built on a tri-partite plan surmounted by open quadrilateral or octagonal domes and cupolas. Integral to tservkas are iconostasis screens, interior polychrome decorations, and other historic furnishings. Important elements of some tservkas include wooden bell towers, churchyards, gatehouses and graveyards.",
-        "unesco_link": "https://whc.unesco.org/en/list/1424",
-        "notes": "Traditional wooden Orthodox churches"
+        "type": "Transnational",
+        "category": "C",
+        "criteria": "(3), (4)",
+        "description": "<p>Situated in the eastern fringe of Central Europe, the transnational property numbers a selection of sixteen&nbsp;<em>tserkvas&nbsp;</em>(churches). They were built of horizontal wooden logs between the 16<sup>th</sup>&nbsp;and 19<sup>th</sup>&nbsp;centuries by communities of Orthodox and Greek Catholic faiths. The&nbsp;<em>tserkvas</em>&nbsp;bear testimony to a distinct building tradition rooted in Orthodox ecclesiastic design interwoven with elements of local tradition, and symbolic references to their communities&rsquo; cosmogony.&nbsp;&nbsp;The&nbsp;<em>tserkva</em><em>s&nbsp;</em>are built on a tri-partite plan surmounted by open quadrilateral or octagonal domes and cupolas. Integral to <em>tserkvas</em> are iconostasis screens, interior polychrome decorations, and other historic furnishings. Important elements of some <em>tserkvas</em> include&nbsp;wooden bell towers, churchyards, gatehouses and graveyards.</p>",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Europe and North America",
+        "unesco_link": "https://whc.unesco.org/en/list/1424"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.6855583333,
+          39.4414888889
+        ]
+      },
+      "properties": {
+        "name": "Silk Roads: Zarafshan-Karakum Corridor",
+        "country": "Tajikistan,Turkmenistan,Uzbekistan",
+        "year": 2023,
+        "type": "Transnational",
+        "category": "C",
+        "criteria": "(2), (3), (5)",
+        "description": "The Zarafshan-Karakum Corridor is a key section of the Silk Roads in Central Asia that connects other corridors from all directions. Located in rugged mountains, fertile river valleys, and uninhabitable desert, the 866-kilometre corridor runs from east to west along the Zarafshan River and further southwest following the ancient caravan roads crossing the Karakum Desert to the Merv Oasis. Channelling much of the east-west exchange along the Silk Roads from the 2nd century BCE to the 16th century CE, a large quantity of goods was traded along the corridor. People travelled, settled, conquered, or were defeated here, making it a melting pot of ethnicities, cultures, religions, sciences, and technologies.",
+        "transboundary": true,
+        "ensemble": false,
+        "region": "Asia and the Pacific",
+        "unesco_link": "https://whc.unesco.org/en/list/1675"
       }
     }
   ]
