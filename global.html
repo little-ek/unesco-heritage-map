@@ -62,10 +62,64 @@
             color: #000000;
         }
         
+        .stats-panel {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .stats-title {
+            font-weight: 600;
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .stats-region {
+            font-weight: 500;
+            color: #555;
+            min-width: 140px;
+        }
+        
+        .stats-bar-container {
+            flex: 1;
+            margin: 0 10px;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .stats-bar {
+            height: 100%;
+            background: #e74c3c;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        
+        .stats-percentage {
+            font-weight: 600;
+            color: #e74c3c;
+            min-width: 45px;
+            text-align: right;
+        }
+        
         .legend {
             margin-top: 20px;
             padding-top: 20px;
-            border-top: 2px solid #ffffff;
+            border-top: 2px solid #eee;
         }
         
         .legend-title {
@@ -115,6 +169,48 @@
             color: #999;
             font-size: 12px;
             margin-left: 5px;
+        }
+        
+        .continent-filters {
+            margin-top: 15px;
+            padding: 12px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+        }
+        
+        .continent-filter-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .continent-filter-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            padding: 3px;
+            border-radius: 3px;
+            transition: background 0.2s;
+        }
+        
+        .continent-filter-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .continent-filter-item input {
+            margin-right: 6px;
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+        }
+        
+        .continent-filter-item label {
+            cursor: pointer;
+            flex: 1;
         }
 
         .maplibregl-popup-content {
@@ -196,13 +292,13 @@
                 <strong style="color: #e74c3c;">ensemble nominations</strong> (437 sites, 43% of cultural sites) 
                 being the most common strategy for presenting cultural heritage.
             </p>
-            
-             <p>
-                Notice how <strong style="color: #e74c3c;">ensemble nominations</strong> cluster in 
-                Latin America (51%), the Arab world (47%), and Europe (44%). These are regions with traditions 
-                of presenting heritage within urban or landscape contexts rather than 
-                as isolated monuments.
-            </p>
+        </div>
+        
+        <div class="stats-panel" id="stats-panel">
+            <div class="stats-title">📊 Ensemble Representation by Region</div>
+            <div id="stats-content">
+                <!-- Dynamic stats will be inserted here -->
+            </div>
         </div>
         
         <div class="legend">
@@ -252,8 +348,32 @@
                 Individual cultural monuments, archaeological sites
             </div>
             
+            <div class="continent-filters">
+                <div class="continent-filter-title">🌎 Filter by Continent:</div>
+                <div class="continent-filter-item">
+                    <input type="checkbox" checked id="filter-europe">
+                    <label for="filter-europe">Europe and North America</label>
+                </div>
+                <div class="continent-filter-item">
+                    <input type="checkbox" checked id="filter-asia">
+                    <label for="filter-asia">Asia and the Pacific</label>
+                </div>
+                <div class="continent-filter-item">
+                    <input type="checkbox" checked id="filter-africa">
+                    <label for="filter-africa">Africa</label>
+                </div>
+                <div class="continent-filter-item">
+                    <input type="checkbox" checked id="filter-latin">
+                    <label for="filter-latin">Latin America and the Caribbean</label>
+                </div>
+                <div class="continent-filter-item">
+                    <input type="checkbox" checked id="filter-arab">
+                    <label for="filter-arab">Arab States</label>
+                </div>
+            </div>
+            
             <div style="margin-top: 15px; padding: 12px; background: #f8f9fa; border-radius: 4px; font-size: 11px; color: #555; line-height: 1.5;">
-                <strong>💡 Tip:</strong> Click checkboxes to show/hide different types. Uncheck all except "Ensemble" to see only ensemble sites (437 total).
+                <strong>💡 Tip:</strong> Use the filters to explore patterns. Try unchecking "Europe and North America" while viewing only "Ensemble" sites to see post-Soviet strategies.
             </div>
         </div>
     </div>
@@ -286,10 +406,67 @@
 
         map.addControl(new maplibregl.NavigationControl(), 'top-left');
 
+        let allData = null;
+
+        // Function to calculate statistics
+        function calculateStats(data) {
+            const regionStats = {};
+            
+            data.features.forEach(feature => {
+                const region = feature.properties.region;
+                const isEnsemble = feature.properties.is_ensemble;
+                
+                if (!regionStats[region]) {
+                    regionStats[region] = {
+                        total: 0,
+                        ensemble: 0
+                    };
+                }
+                
+                regionStats[region].total++;
+                if (isEnsemble) {
+                    regionStats[region].ensemble++;
+                }
+            });
+            
+            // Calculate percentages and sort
+            const statsArray = Object.entries(regionStats).map(([region, stats]) => ({
+                region: region,
+                percentage: stats.total > 0 ? Math.round((stats.ensemble / stats.total) * 100) : 0,
+                ensemble: stats.ensemble,
+                total: stats.total
+            })).sort((a, b) => b.percentage - a.percentage);
+            
+            return statsArray;
+        }
+
+        // Function to update stats display
+        function updateStats(filteredData) {
+            const stats = calculateStats(filteredData);
+            const statsContent = document.getElementById('stats-content');
+            
+            if (stats.length === 0) {
+                statsContent.innerHTML = '<div style="font-size: 12px; color: #999; text-align: center;">No sites selected</div>';
+                return;
+            }
+            
+            statsContent.innerHTML = stats.map(stat => `
+                <div class="stats-row">
+                    <span class="stats-region">${stat.region}</span>
+                    <div class="stats-bar-container">
+                        <div class="stats-bar" style="width: ${stat.percentage}%"></div>
+                    </div>
+                    <span class="stats-percentage">${stat.percentage}%</span>
+                </div>
+            `).join('');
+        }
+
         map.on('load', function() {
             fetch('all_unesco_sites.geojson')
                 .then(response => response.json())
                 .then(data => {
+                    allData = data;
+                    
                     map.addSource('global-sites', {
                         type: 'geojson',
                         data: data
@@ -314,24 +491,53 @@
                         }
                     });
 
+                    // Initialize stats
+                    updateStats(data);
+
                     // Filter functionality
-                    const checkboxes = {
+                    const typeCheckboxes = {
                         'Ensemble': document.getElementById('filter-ensemble'),
                         'Transnational': document.getElementById('filter-transnational'),
                         'Natural': document.getElementById('filter-natural'),
                         'Mixed': document.getElementById('filter-mixed'),
                         'Monument': document.getElementById('filter-monument')
                     };
+                    
+                    const continentCheckboxes = {
+                        'Europe and North America': document.getElementById('filter-europe'),
+                        'Asia and the Pacific': document.getElementById('filter-asia'),
+                        'Africa': document.getElementById('filter-africa'),
+                        'Latin America and the Caribbean': document.getElementById('filter-latin'),
+                        'Arab States': document.getElementById('filter-arab')
+                    };
 
                     function updateFilter() {
-                        const activeTypes = Object.keys(checkboxes).filter(type => checkboxes[type].checked);
+                        const activeTypes = Object.keys(typeCheckboxes).filter(type => typeCheckboxes[type].checked);
+                        const activeContinents = Object.keys(continentCheckboxes).filter(cont => continentCheckboxes[cont].checked);
                         
-                        if (activeTypes.length === 0) {
+                        if (activeTypes.length === 0 || activeContinents.length === 0) {
                             // If nothing selected, hide all
                             map.setFilter('site-circles', ['==', 'display_type', '']);
+                            updateStats({ features: [] });
                         } else {
-                            // Show only selected types
-                            map.setFilter('site-circles', ['in', 'display_type', ...activeTypes]);
+                            // Build filter combining types and continents
+                            const filter = [
+                                'all',
+                                ['in', 'display_type', ...activeTypes],
+                                ['in', 'region', ...activeContinents]
+                            ];
+                            
+                            map.setFilter('site-circles', filter);
+                            
+                            // Filter data for stats
+                            const filteredData = {
+                                ...allData,
+                                features: allData.features.filter(f => 
+                                    activeTypes.includes(f.properties.display_type) &&
+                                    activeContinents.includes(f.properties.region)
+                                )
+                            };
+                            updateStats(filteredData);
                         }
 
                         // Update legend item styling
@@ -346,8 +552,12 @@
                         });
                     }
 
-                    // Add event listeners to checkboxes
-                    Object.values(checkboxes).forEach(checkbox => {
+                    // Add event listeners to all checkboxes
+                    Object.values(typeCheckboxes).forEach(checkbox => {
+                        checkbox.addEventListener('change', updateFilter);
+                    });
+                    
+                    Object.values(continentCheckboxes).forEach(checkbox => {
                         checkbox.addEventListener('change', updateFilter);
                     });
 
