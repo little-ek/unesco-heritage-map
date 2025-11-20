@@ -39,16 +39,16 @@
         }
         
         h1 {
-            color: #ffffff !important;
+            color: #222;
             font-size: 22px;
             margin-bottom: 8px;
-            color: #ffffff;
+            color: #222;
             line-height: 1.3;
         }
         
         .subtitle {
             font-size: 14px;
-            color: #ffffff;
+            color: #222;
             margin-bottom: 20px;
             line-height: 1.4;
         }
@@ -62,17 +62,17 @@
         }
         
         .legend-title {
-            color: #ffffff;
+            color: #222;
             font-weight: 600;
             font-size: 13px;
-            color: #ffffff;
+            color: #222;
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
         
         .legend-item {
-            color: #ffffff;
+            color: #222;
             display: flex;
             align-items: center;
             margin-bottom: 8px;
@@ -94,7 +94,7 @@
         .legend-symbol.secular { background-color: #7f8c8d; }
         
         .legend-count {
-            color: #ffffff;
+            color: #222;
             font-size: 12px;
             margin-left: 5px;
         }
@@ -106,17 +106,22 @@
         
 
         .maplibregl-popup-content {
-            background: #1a1a1a;
-            color: #ffffff;
+            background: white !important;
+            color: #222;
             padding: 15px;
             max-width: 280px;
+        }
+        
+        .maplibregl-popup-tip {
+            border-top-color: white !important;
+            border-bottom-color: white !important;
         }
         
         .popup-title {
             font-weight: bold;
             font-size: 16px;
             margin-bottom: 8px;
-            color: #ffffff;
+            color: #222;
         }
         
         .popup-type {
@@ -144,28 +149,29 @@
             margin-bottom: 6px;
             font-size: 13px;
             line-height: 1.4;
+            color: #222;
         }
         
         .popup-field strong {
-            color: #ffffff;
+            color: #222;
         }
         
         .popup-description {
             margin-top: 10px;
             padding-top: 10px;
-            border-top: 1px solid #000000;
+            border-top: 1px solid #eee;
             font-size: 12px;
-            color: #000000;
+            color: #222;
             line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <nav style="position: absolute; top: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.95); color: #000000; padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 15px; align-items: center;">
-        <span style="font-weight: 600; font-size: 14px; color: #ffffff;">UNESCO Heritage Atlas:</span>
-        <a href="global.html" style="color: #ffffff; text-decoration: none; font-size: 14px; padding: 5px 10px;">Global View</a>
-        <a href="index.html" style="color: #ffffff; text-decoration: none; font-size: 14px; padding: 5px 10px;">Regional Overview</a>
-        <a href="timeline.html" style="color: #ffffff; text-decoration: none; font-size: 14px; padding: 5px 10px;">Timeline</a>
+    <nav style="position: absolute; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); color: #000000; padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 15px; align-items: center;">
+        <span style="font-weight: 600; font-size: 14px; color: #222;">UNESCO Heritage Atlas:</span>
+        <a href="global.html" style="color: #222; text-decoration: none; font-size: 14px; padding: 5px 10px;">Global View</a>
+        <a href="index.html" style="color: #222; text-decoration: none; font-size: 14px; padding: 5px 10px;">Regional Overview</a>
+        <a href="timeline.html" style="color: #222; text-decoration: none; font-size: 14px; padding: 5px 10px;">Timeline</a>
         <a href="bukhara.html" style="color: #0066cc; text-decoration: none; font-size: 14px; padding: 5px 10px; background: #e3f2fd; border-radius: 4px;">Bukhara Detail</a>
             <a href="contact.html" style="color: #333; text-decoration: none; font-size: 14px; padding: 5px 10px;">Contact</a>
     </nav>
