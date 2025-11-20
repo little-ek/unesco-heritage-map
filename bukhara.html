@@ -27,6 +27,16 @@
         }
         
         .map-overlay {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .map-overlay.collapsed {
+            transform: translateX(-420px);
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .map-overlay {
             position: absolute;
             top: 70px;
             left: 20px;
@@ -164,6 +174,72 @@
             color: #222;
             line-height: 1.5;
         }
+
+        .toggle-sidebar-btn {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            background: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 2;
+            transition: all 0.2s;
+        }
+        
+        .toggle-sidebar-btn:hover {
+            background: #f0f0f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        }
+        
+        .toggle-sidebar-btn.sidebar-open {
+            left: 420px;
+        }
+
+        .nav-arrows {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+            z-index: 1;
+        }
+        
+        .nav-arrow {
+            background: white;
+            color: #333;
+            border: 2px solid #ddd;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .nav-arrow:hover {
+            border-color: #3498db;
+            color: #3498db;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+        }
+        
+        .nav-arrow.next {
+            background: #e74c3c;
+            color: white;
+            border-color: #e74c3c;
+        }
+        
+        .nav-arrow.next:hover {
+            background: #c0392b;
+            border-color: #c0392b;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -178,7 +254,9 @@
     
     <div id="map"></div>
     
-    <div class="map-overlay">
+    <button class="toggle-sidebar-btn sidebar-open" id="toggleSidebar" title="Hide/Show Info Panel">◀</button>
+    
+    <div class="map-overlay" id="mapOverlay">
         <h1>Inside the Ensemble: Bukhara</h1>
         <p class="subtitle">
             Inscribed in 1993 as an <strong>"urban ensemble,"</strong> Bukhara's UNESCO nomination 
