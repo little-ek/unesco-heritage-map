@@ -459,6 +459,36 @@
                 })
                 .catch(error => console.error('Error:', error));
         });
+
+    <div class="nav-arrows">
+        <a href="conclusion.html" class="nav-arrow next">Next: Conclusion →</a>
+    </div>
+
+    <script>
+        // Toggle sidebar functionality
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const overlay = document.getElementById('mapOverlay');
+        let sidebarOpen = true;
+
+        toggleBtn.addEventListener('click', function() {
+            sidebarOpen = !sidebarOpen;
+            
+            if (sidebarOpen) {
+                overlay.classList.remove('collapsed');
+                toggleBtn.classList.add('sidebar-open');
+                toggleBtn.innerHTML = '◀';
+                toggleBtn.title = 'Hide Info Panel';
+            } else {
+                overlay.classList.add('collapsed');
+                toggleBtn.classList.remove('sidebar-open');
+                toggleBtn.innerHTML = '▶';
+                toggleBtn.title = 'Show Info Panel';
+            }
+        });
     </script>
+    
+    <div class="nav-arrows">
+        <a href="conclusion.html" class="nav-arrow next">Next: Conclusion →</a>
+    </div>
 </body>
 </html>
