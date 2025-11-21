@@ -9,286 +9,90 @@
     <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
         
         .map-overlay {
-            position: absolute;
-            top: 70px;
-            left: 20px;
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-            max-width: 420px;
-            z-index: 1;
-            max-height: calc(100vh - 100px);
-            overflow-y: auto;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            position: absolute; top: 70px; left: 20px; background: white;
+            padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            max-width: 420px; z-index: 1; max-height: calc(100vh - 100px);
+            overflow-y: auto; transition: transform 0.3s ease, opacity 0.3s ease;
         }
         
         .map-overlay.collapsed {
-            transform: translateX(-440px);
-            opacity: 0;
-            pointer-events: none;
+            transform: translateX(-440px); opacity: 0; pointer-events: none;
         }
         
         .toggle-sidebar-btn {
-            color: #222;
-            position: absolute;
-            top: 80px;
-            left: 20px;
-            background: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            cursor: pointer;
-            font-size: 18px;
-            z-index: 2;
-            transition: all 0.2s;
+            position: absolute; top: 80px; left: 20px; background: white;
+            border: none; padding: 10px 15px; border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15); cursor: pointer;
+            font-size: 18px; z-index: 2; transition: all 0.2s;
         }
         
-        .toggle-sidebar-btn:hover {
-            background: #f0f0f0;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-        }
+        .toggle-sidebar-btn:hover { background: #f0f0f0; }
+        .toggle-sidebar-btn.sidebar-open { left: 460px; }
         
-        .toggle-sidebar-btn.sidebar-open {
-            left: 460px;
-        }
-        
-        h1 {
-            color: #222;
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #222;
-            line-height: 1.3;
-        }
+        h1 { font-size: 24px; margin-bottom: 10px; color: #222; }
         
         .narrative-text {
-            font-size: 14px;
-            color: #222;
-            line-height: 1.7;
-            margin-bottom: 20px;
+            font-size: 14px; color: #222; line-height: 1.7; margin-bottom: 20px;
         }
         
-        .narrative-text p {
-            margin-bottom: 12px;
-        }
-        
-        .narrative-text strong {
-            color: #000000;
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        .narrative-text p { margin-bottom: 12px; }
         
         .legend {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 2px solid #eee;
+            margin-top: 20px; padding-top: 20px; border-top: 2px solid #eee;
         }
         
         .legend-title {
-            color: #222;
-            font-weight: 600;
-            font-size: 14px;
-            color: #222;
-            margin-bottom: 12px;
+            font-weight: 600; font-size: 14px; color: #222; margin-bottom: 12px;
         }
         
         .legend-item {
-            color: #222;
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            font-size: 13px;
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 4px;
-            transition: background 0.2s;
+            display: flex; align-items: center; margin-bottom: 10px;
+            font-size: 13px; cursor: pointer; padding: 5px;
+            border-radius: 4px; transition: background 0.2s; color: #222;
         }
         
-        .legend-item:hover {
-            background: #f8f9fa;
-        }
-        
-        .legend-item.disabled {
-            opacity: 0.4;
-        }
+        .legend-item:hover { background: #f8f9fa; }
+        .legend-item.disabled { opacity: 0.4; }
         
         .legend-item input[type="checkbox"] {
-            margin-right: 8px;
-            cursor: pointer;
-            width: 16px;
-            height: 16px;
+            margin-right: 8px; cursor: pointer; width: 16px; height: 16px;
         }
         
         .legend-symbol {
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            margin-right: 10px;
-            border: 2px solid white;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-            flex-shrink: 0;
-        }
-        
-        .legend-count {
-            color: #222;
-            font-size: 12px;
-            margin-left: 5px;
+            width: 16px; height: 16px; border-radius: 50%; margin-right: 10px;
+            border: 2px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
         
         .continent-filters {
-            background: #ffffff;
-            color: #000000;
-            margin-top: 15px;
-            padding: 12px;
-            background: #fff;
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
+            margin-top: 15px; padding: 12px; background: #fff;
+            border: 1px solid #e0e0e0; border-radius: 6px;
         }
         
         .continent-filter-title {
-            color: #000000;
-            font-size: 12px;
-            font-weight: 600;
-            color: #222;
-            margin-bottom: 8px;
+            font-size: 12px; font-weight: 600; color: #222; margin-bottom: 8px;
         }
         
         .continent-filter-item {
-            color: #000000;
-            display: flex;
-            align-items: center;
-            margin-bottom: 6px;
-            font-size: 12px;
-            cursor: pointer;
-            padding: 3px;
-            border-radius: 3px;
-            transition: background 0.2s;
-        }
-        
-        .continent-filter-item:hover {
-            background: #f8f9fa;
+            display: flex; align-items: center; margin-bottom: 6px;
+            font-size: 12px; cursor: pointer; padding: 3px;
         }
         
         .continent-filter-item input {
-            margin-right: 6px;
-            width: 14px;
-            height: 14px;
-            cursor: pointer;
+            margin-right: 6px; width: 14px; height: 14px; cursor: pointer;
         }
         
-        .continent-filter-item label {
-            cursor: pointer;
-            flex: 1;
-        }
-
-        .maplibregl-popup-content {
-            padding: 15px;
-            max-width: 280px;
-        }
-        
-        .popup-title {
-            font-weight: bold;
-            font-size: 15px;
-            margin-bottom: 8px;
-            color: #222;
-        }
-        
-        .popup-type {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-        }
-        
-        .popup-type.ensemble {
-            background: #ffe5e5;
-            color: #c0392b;
-        }
-        
-        .popup-type.transnational {
-            background: #e3f2fd;
-            color: #1976d2;
-        }
-        
-        .popup-type.natural {
-            background: #e8f5e9;
-            color: #2e7d32;
-        }
-        
-        .popup-type.mixed {
-            background: #fff3e0;
-            color: #e65100;
-        }
-        
-        .popup-type.monument {
-            background: #ecf0f1;
-            color: #7f8c8d;
-        }
-        
-        .popup-field {
-            margin-bottom: 5px;
-            font-size: 13px;
-        }
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        .maplibregl-popup-content { padding: 15px; max-width: 280px; }
+        .popup-title { font-weight: bold; font-size: 15px; margin-bottom: 8px; color: #222; }
+        .popup-field { margin-bottom: 5px; font-size: 13px; color: #222; }
     </style>
 </head>
 <body>
-        <nav style="position: absolute; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); color: #000000; padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 15px; align-items: center;">
+    <nav style="position: absolute; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 15px; align-items: center;">
         <span style="font-weight: 600; font-size: 14px; color: #222;">UNESCO Heritage Atlas:</span>
         <a href="intro.html" style="color: #222; text-decoration: none; font-size: 14px; padding: 5px 10px;">Introduction</a>
         <a href="global.html" style="color: #0066cc; background: #e3f2fd; border-radius: 4px; text-decoration: none; font-size: 14px; padding: 5px 10px;">Global View</a>
@@ -307,356 +111,200 @@
         <h1>Global UNESCO World Heritage Sites</h1>
         
         <div class="narrative-text">
-            <p>
-                There are <strong>1,247 UNESCO World Heritage Sites</strong> that span every continent. These sites represent humanity's shared cultural and natural heritage. However, despite their global significance, <strong style="color: #e74c3c;">"ensemble sites"</strong>, or properties where multiple buildings, structures, or landscapes are nominated together as a unified whole, remain undefined in UNESCO's formal guidelines. This creates a critical gap: while ensemble nominations represent <strong>43% of all cultural World Heritage Sites</strong> (437 of 1,016 sites), they lack an explicit definition in the Convention's operational framework.
-            </p>
+            <p>There are <strong>1,247 UNESCO World Heritage Sites</strong> that span every continent. <strong style="color: #e74c3c;">"Ensemble sites"</strong> represent <strong>43% of all cultural World Heritage Sites</strong> (437 of 1,016 sites), yet lack formal definition in UNESCO guidelines.</p>
             
-            <p>
-                Understanding ensemble nominations matters because they reveal fundamentally different approaches to heritage presentation. An ensemble site groups buildings or architectural elements that gain significance from their collective relationship—through architectural coherence, urban homogeneity, or landscape integration—rather than from individual monuments standing alone. This approach is particularly relevant for historic urban centers and architectural complexes where value lies in overall composition rather than isolated structures.
-            </p>
-            
-            <p>
-                This map shows five distinct nomination approaches, with <strong style="color: #e74c3c;">ensemble nominations</strong> (437 sites, 43% of cultural sites) being the single most common strategy globally for presenting cultural heritage to UNESCO.
-            </p>
-            
-            <p>
-                Most strikingly, <strong style="color: #e74c3c;">post-Soviet states inscribe ensemble nominations at 62.5%</strong> — nearly triple Western Europe's 23-29% rate — despite only three years of Soviet participation in the World Heritage Convention (1988-1991) before the USSR's dissolution. This pattern suggests that institutional legacies from comprehensive state property systems may enable ensemble approaches unavailable to systems with fragmented private ownership.
-            </p>
+            <p><strong style="color: #e74c3c;">Post-Soviet states inscribe ensemble nominations at 62.5%</strong> — nearly triple Western Europe's 23-29% rate.</p>
         </div>
         
-        
-        
-        
-        
-        
-        
         <div class="legend">
-            <div class="legend-title">Filter by Type (Click to toggle):</div>
-            <label class="legend-item" data-type="Ensemble">
+            <div class="legend-title">Filter by Type:</div>
+            
+            <label class="legend-item">
                 <input type="checkbox" checked id="filter-ensemble">
                 <div class="legend-symbol" style="background-color: #e74c3c;"></div>
-                <span><strong>Ensemble</strong><span class="legend-count">(437 sites)</span></span>
+                <span><strong>Ensemble</strong> (437 sites)</span>
             </label>
-            <div style="font-size: 11px; color: #222; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
-                Historic cities, cultural landscapes, urban districts
-            </div>
             
-            <label class="legend-item" data-type="Transnational">
+            <label class="legend-item">
                 <input type="checkbox" checked id="filter-transnational">
                 <div class="legend-symbol" style="background-color: #3498db;"></div>
-                <span><strong>Transnational</strong><span class="legend-count">(39 sites)</span></span>
+                <span><strong>Transnational</strong> (39 sites)</span>
             </label>
-            <div style="font-size: 11px; color: #222; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
-                Shared by multiple countries (non-ensemble)
-            </div>
             
-            <label class="legend-item" data-type="Natural">
+            <label class="legend-item">
                 <input type="checkbox" checked id="filter-natural">
                 <div class="legend-symbol" style="background-color: #27ae60;"></div>
-                <span><strong>Natural</strong><span class="legend-count">(215 sites)</span></span>
+                <span><strong>Natural</strong> (215 sites)</span>
             </label>
-            <div style="font-size: 11px; color: #222; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
-                Outstanding natural features, ecosystems, biodiversity
-            </div>
             
-            <label class="legend-item" data-type="Mixed">
+            <label class="legend-item">
                 <input type="checkbox" checked id="filter-mixed">
                 <div class="legend-symbol" style="background-color: #f39c12;"></div>
-                <span><strong>Mixed</strong><span class="legend-count">(31 sites)</span></span>
+                <span><strong>Mixed</strong> (31 sites)</span>
             </label>
-            <div style="font-size: 11px; color: #222; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
-                Both cultural and natural significance
-            </div>
             
-            <label class="legend-item" data-type="Monument">
+            <label class="legend-item">
                 <input type="checkbox" checked id="filter-monument">
                 <div class="legend-symbol" style="background-color: #95a5a6;"></div>
-                <span><strong>Monument</strong><span class="legend-count">(525 sites)</span></span>
+                <span><strong>Monument</strong> (525 sites)</span>
             </label>
-            <div style="font-size: 11px; color: #222; margin-left: 44px; margin-bottom: 10px; line-height: 1.4;">
-                Individual cultural monuments, archaeological sites
-            </div>
             
             <div class="continent-filters">
                 <div class="continent-filter-title">🌎 Filter by Continent:</div>
                 <div class="continent-filter-item">
                     <input type="checkbox" checked id="filter-europe">
-                    <label for="filter-europe">Europe and North America</label>
+                    <label>Europe and North America</label>
                 </div>
                 <div class="continent-filter-item">
                     <input type="checkbox" checked id="filter-asia">
-                    <label for="filter-asia">Asia and the Pacific</label>
+                    <label>Asia and the Pacific</label>
                 </div>
                 <div class="continent-filter-item">
                     <input type="checkbox" checked id="filter-africa">
-                    <label for="filter-africa">Africa</label>
+                    <label>Africa</label>
                 </div>
                 <div class="continent-filter-item">
                     <input type="checkbox" checked id="filter-latin">
-                    <label for="filter-latin">Latin America and the Caribbean</label>
+                    <label>Latin America and the Caribbean</label>
                 </div>
                 <div class="continent-filter-item">
                     <input type="checkbox" checked id="filter-arab">
-                    <label for="filter-arab">Arab States</label>
+                    <label>Arab States</label>
                 </div>
             </div>
-            
-            
+        </div>
     </div>
 
     <script>
-        // Simple style with white land and gray water
-        const style = {
-            "version": 8,
-            "sources": {
-                "carto": {
-                    "type": "raster",
-                    "tiles": ["https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"],
-                    "tileSize": 256
-                }
-            },
-            "layers": [{
-                "id": "background",
-                "type": "raster",
-                "source": "carto"
-            }]
-        };
-
+        console.log('Script started');
+        
         const map = new maplibregl.Map({
             container: 'map',
-            style: style,
+            style: {
+                "version": 8,
+                "sources": {
+                    "carto": {
+                        "type": "raster",
+                        "tiles": ["https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"],
+                        "tileSize": 256
+                    }
+                },
+                "layers": [{"id": "background", "type": "raster", "source": "carto"}]
+            },
             center: [20, 30],
-            zoom: 1.5,
-            minZoom: 1
+            zoom: 1.5
         });
 
+        console.log('Map created');
+        
         map.addControl(new maplibregl.NavigationControl(), 'top-left');
 
-        // Toggle sidebar functionality
-        const toggleBtn = document.getElementById('toggleSidebar');
-        const overlay = document.getElementById('mapOverlay');
-        let sidebarOpen = true;
-
-        toggleBtn.addEventListener('click', function() {
-            sidebarOpen = !sidebarOpen;
+        // Toggle sidebar
+        document.getElementById('toggleSidebar').addEventListener('click', function() {
+            const overlay = document.getElementById('mapOverlay');
+            const btn = this;
+            const isOpen = overlay.classList.contains('collapsed');
             
-            if (sidebarOpen) {
+            if (isOpen) {
                 overlay.classList.remove('collapsed');
-                toggleBtn.classList.add('sidebar-open');
-                toggleBtn.innerHTML = '◀';
-                toggleBtn.title = 'Hide Info Panel';
+                btn.classList.add('sidebar-open');
+                btn.innerHTML = '◀';
             } else {
                 overlay.classList.add('collapsed');
-                toggleBtn.classList.remove('sidebar-open');
-                toggleBtn.innerHTML = '▶';
-                toggleBtn.title = 'Show Info Panel';
+                btn.classList.remove('sidebar-open');
+                btn.innerHTML = '▶';
             }
         });
 
-        let allData = null;
-
-        // Function to calculate statistics
-        function calculateStats(data) {
-            const regionStats = {};
-            
-            data.features.forEach(feature => {
-                const region = feature.properties.region;
-                const isEnsemble = feature.properties.is_ensemble;
-                
-                if (!regionStats[region]) {
-                    regionStats[region] = {
-                        total: 0,
-                        ensemble: 0
-                    };
-                }
-                
-                regionStats[region].total++;
-                if (isEnsemble) {
-                    regionStats[region].ensemble++;
-                }
-            });
-            
-            // Calculate percentages and sort
-            const statsArray = Object.entries(regionStats).map(([region, stats]) => ({
-                region: region,
-                percentage: stats.total > 0 ? Math.round((stats.ensemble / stats.total) * 100) : 0,
-                ensemble: stats.ensemble,
-                total: stats.total
-            })).sort((a, b) => b.percentage - a.percentage);
-            
-            return statsArray;
-        }
-
-        // Function to update stats display
-        function updateStats(filteredData) {
-            const stats = calculateStats(filteredData);
-            const statsContent = document.getElementById('stats-content');
-            
-            if (stats.length === 0) {
-                statsContent.innerHTML = '<div style="font-size: 12px; color: #222; text-align: center;">No sites selected</div>';
-                return;
-            }
-            
-            statsContent.innerHTML = stats.map(stat => `
-                <div class="stats-row">
-                    <span class="stats-region">${stat.region}</span>
-                    <div class="stats-bar-container">
-                        <div class="stats-bar" style="width: ${stat.percentage}%"></div>
-                    </div>
-                    <span class="stats-percentage">${stat.percentage}%</span>
-                </div>
-            `).join('');
-        }
-
         map.on('load', function() {
+            console.log('Map loaded, fetching data...');
+            
             fetch('all_unesco_sites.geojson')
-                .then(response => response.json())
+                .then(response => {
+                    console.log('Fetch response:', response.ok);
+                    return response.json();
+                })
                 .then(data => {
-                    allData = data;
+                    console.log('Data loaded, features:', data.features.length);
                     
-                    map.addSource('global-sites', {
+                    map.addSource('sites', {
                         type: 'geojson',
                         data: data
                     });
 
                     map.addLayer({
-                        'id': 'site-circles',
-                        'type': 'circle',
-                        'source': 'global-sites',
-                        'paint': {
-                            'circle-radius': [
-                                'interpolate',
-                                ['linear'],
-                                ['zoom'],
-                                2, 4,
-                                8, 10
-                            ],
+                        id: 'site-circles',
+                        type: 'circle',
+                        source: 'sites',
+                        paint: {
+                            'circle-radius': 5,
                             'circle-color': ['get', 'display_color'],
                             'circle-stroke-width': 1.5,
                             'circle-stroke-color': '#ffffff',
                             'circle-opacity': 0.8
                         }
                     });
-
-                    // Initialize stats
-                    updateStats(data);
-
-                    // Filter functionality
-                    const typeCheckboxes = {
-                        'Ensemble': document.getElementById('filter-ensemble'),
-                        'Transnational': document.getElementById('filter-transnational'),
-                        'Natural': document.getElementById('filter-natural'),
-                        'Mixed': document.getElementById('filter-mixed'),
-                        'Monument': document.getElementById('filter-monument')
-                    };
                     
-                    const continentCheckboxes = {
-                        'Europe and North America': document.getElementById('filter-europe'),
-                        'Asia and the Pacific': document.getElementById('filter-asia'),
-                        'Africa': document.getElementById('filter-africa'),
-                        'Latin America and the Caribbean': document.getElementById('filter-latin'),
-                        'Arab States': document.getElementById('filter-arab')
-                    };
+                    console.log('Layer added');
 
-                    function updateFilter() {
-                        const activeTypes = Object.keys(typeCheckboxes).filter(type => typeCheckboxes[type].checked);
-                        const activeContinents = Object.keys(continentCheckboxes).filter(cont => continentCheckboxes[cont].checked);
+                    // Filter function
+                    function applyFilters() {
+                        const types = [];
+                        if (document.getElementById('filter-ensemble').checked) types.push('Ensemble');
+                        if (document.getElementById('filter-transnational').checked) types.push('Transnational');
+                        if (document.getElementById('filter-natural').checked) types.push('Natural');
+                        if (document.getElementById('filter-mixed').checked) types.push('Mixed');
+                        if (document.getElementById('filter-monument').checked) types.push('Monument');
                         
-                        if (activeTypes.length === 0 || activeContinents.length === 0) {
-                            // If nothing selected, hide all
-                            map.setFilter('site-circles', ['==', 'display_type', '']);
-                            updateStats({ features: [] });
+                        const regions = [];
+                        if (document.getElementById('filter-europe').checked) regions.push('Europe and North America');
+                        if (document.getElementById('filter-asia').checked) regions.push('Asia and the Pacific');
+                        if (document.getElementById('filter-africa').checked) regions.push('Africa');
+                        if (document.getElementById('filter-latin').checked) regions.push('Latin America and the Caribbean');
+                        if (document.getElementById('filter-arab').checked) regions.push('Arab States');
+                        
+                        console.log('Applying filters - types:', types.length, 'regions:', regions.length);
+                        
+                        if (types.length === 0 || regions.length === 0) {
+                            map.setLayoutProperty('site-circles', 'visibility', 'none');
                         } else {
-                            // Build filter combining types and continents
-                            const typeFilter = activeTypes.length === 1 
-                                ? ['==', 'display_type', activeTypes[0]]
-                                : ['in', ['get', 'display_type'], ['literal', activeTypes]];
+                            map.setLayoutProperty('site-circles', 'visibility', 'visible');
                             
-                            const continentFilter = activeContinents.length === 1
-                                ? ['==', 'region', activeContinents[0]]
-                                : ['in', ['get', 'region'], ['literal', activeContinents]];
-                            
-                            const filter = ['all', typeFilter, continentFilter];
+                            const filter = [
+                                'all',
+                                ['match', ['get', 'display_type'], types, true, false],
+                                ['match', ['get', 'region'], regions, true, false]
+                            ];
                             
                             map.setFilter('site-circles', filter);
-                            
-                            // Filter data for stats
-                            const filteredData = {
-                                ...allData,
-                                features: allData.features.filter(f => 
-                                    activeTypes.includes(f.properties.display_type) &&
-                                    activeContinents.includes(f.properties.region)
-                                )
-                            };
-                            updateStats(filteredData);
                         }
-
-                        // Update legend item styling
-                        document.querySelectorAll('.legend-item').forEach(item => {
-                            const type = item.getAttribute('data-type');
-                            const checkbox = item.querySelector('input[type="checkbox"]');
-                            if (checkbox && !checkbox.checked) {
-                                item.classList.add('disabled');
-                            } else {
-                                item.classList.remove('disabled');
-                            }
-                        });
                     }
 
-                    // Add event listeners to all checkboxes
-                    Object.values(typeCheckboxes).forEach(checkbox => {
-                        checkbox.addEventListener('change', updateFilter);
-                    });
-                    
-                    Object.values(continentCheckboxes).forEach(checkbox => {
-                        checkbox.addEventListener('change', updateFilter);
+                    // Add event listeners
+                    ['filter-ensemble', 'filter-transnational', 'filter-natural', 'filter-mixed', 'filter-monument',
+                     'filter-europe', 'filter-asia', 'filter-africa', 'filter-latin', 'filter-arab'].forEach(id => {
+                        document.getElementById(id).addEventListener('change', applyFilters);
                     });
 
-                    const popup = new maplibregl.Popup({
-                        closeButton: true,
-                        closeOnClick: false
-                    });
-
+                    // Popup
                     map.on('click', 'site-circles', function(e) {
                         const props = e.features[0].properties;
-                        const coordinates = e.features[0].geometry.coordinates.slice();
-
-                        // Parse the display_type for styling
-                        const typeClass = props.display_type.toLowerCase();
-                        
-                        // Additional info based on characteristics
-                        let additionalInfo = '';
-                        if (props.is_ensemble === 'true' && props.is_transnational === 'true') {
-                            additionalInfo = '<div style="font-size: 11px; color: #222; margin-top: 5px; padding-top: 5px; border-top: 1px solid #eee;">⭐ Both Ensemble & Transnational</div>';
-                        }
-
-                        const popupContent = `
-                            <div class="popup-title">${props.name}</div>
-                            <div class="popup-type ${typeClass}">${props.display_type}</div>
-                            <div class="popup-field"><strong>Country:</strong> ${props.country}</div>
-                            <div class="popup-field"><strong>Category:</strong> ${props.category}</div>
-                            <div class="popup-field"><strong>Inscribed:</strong> ${props.year || 'N/A'}</div>
-                            <div class="popup-field"><strong>Region:</strong> ${props.region}</div>
-                            ${additionalInfo}
-                        `;
-
-                        popup.setLngLat(coordinates)
-                            .setHTML(popupContent)
+                        new maplibregl.Popup()
+                            .setLngLat(e.features[0].geometry.coordinates)
+                            .setHTML(`
+                                <div class="popup-title">${props.name}</div>
+                                <div class="popup-field"><strong>Type:</strong> ${props.display_type}</div>
+                                <div class="popup-field"><strong>Country:</strong> ${props.country}</div>
+                                <div class="popup-field"><strong>Year:</strong> ${props.year || 'N/A'}</div>
+                            `)
                             .addTo(map);
                     });
 
-                    map.on('mouseenter', 'site-circles', function() {
-                        map.getCanvas().style.cursor = 'pointer';
-                    });
-
-                    map.on('mouseleave', 'site-circles', function() {
-                        map.getCanvas().style.cursor = '';
-                    });
+                    map.on('mouseenter', 'site-circles', () => map.getCanvas().style.cursor = 'pointer');
+                    map.on('mouseleave', 'site-circles', () => map.getCanvas().style.cursor = '');
                 })
-                .catch(error => console.error('Error:', error));
+                .catch(error => console.error('Error loading data:', error));
         });
     </script>
-
-    
 </body>
 </html>
