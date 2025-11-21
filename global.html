@@ -232,13 +232,7 @@
                         if (document.getElementById('filter-mixed').checked) types.push('Mixed');
                         if (document.getElementById('filter-monument').checked) types.push('Monument');
                         
-                        const regions = [];
-                        if (document.getElementById('filter-europe').checked) regions.push('Europe and North America');
-                        if (document.getElementById('filter-asia').checked) regions.push('Asia and the Pacific');
-                        if (document.getElementById('filter-africa').checked) regions.push('Africa');
-                        if (document.getElementById('filter-latin').checked) regions.push('Latin America and the Caribbean');
-                        if (document.getElementById('filter-arab').checked) regions.push('Arab States');
-                        
+                    
                         console.log('Applying filters - types:', types.length, 'regions:', regions.length);
                         
                         if (types.length === 0 || regions.length === 0) {
@@ -257,8 +251,7 @@
                     }
 
                     // Add event listeners
-                    ['filter-ensemble', 'filter-transnational', 'filter-natural', 'filter-mixed', 'filter-monument',
-                     'filter-europe', 'filter-asia', 'filter-africa', 'filter-latin', 'filter-arab'].forEach(id => {
+                    ['filter-ensemble', 'filter-transnational', 'filter-natural', 'filter-mixed', 'filter-monument'].forEach(id => {
                         document.getElementById(id).addEventListener('change', applyFilters);
                     });
 
